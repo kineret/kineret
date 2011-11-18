@@ -9,7 +9,7 @@
 
 <body class="calendar">
 <div id="header-top">
-	<?php include ("../menu.php"); ?>
+	<?php include ("../menu.html"); ?>
 </div>
 
 <div id="patrocinio_content">

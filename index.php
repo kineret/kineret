@@ -115,7 +115,7 @@
 <body class="intro">
 
 <div id="header-top">
-	<?php include ("menu.php"); ?>
+	<?php include ("menu.html"); ?>
 </div>
 <div id="header-mid">
 	<div id="painel">
