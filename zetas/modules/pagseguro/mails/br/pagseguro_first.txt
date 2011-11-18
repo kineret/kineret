@@ -1,0 +1,18 @@
+﻿Olá {firstname} {lastname},
+ 
+Notificação de Status {terceiro} - Nº {id_order}
+
+
+Status : {status} 
+
+Caso você não tenha completado o processo de pagamento. 
+Clique no link abaixo para continuar o pagamento, ou copie 
+e cole-o no navegador.
+
+{link}
+ 
+Se for necessário ler e fazer download da fatura acesse o 
+"Histórico de	compras" ou clicando em sua conta 
+"Minha conta" em nosso site.
+ 
+{shop_name} powered with PrestaShop™

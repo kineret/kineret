@@ -1,0 +1,22 @@
+/*
+Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_imageX" where "X" is an integer specifying ordinal position. Below are some styles to get you started!
+*/
+
+.flickr_badge_image {margin:0 10px 0px 10px;}
+.flickr_badge_image img {border: 1px solid #525252;}
+.flickr_badge_image img:hover {cursor:default}
+#flickr_badge_source {text-align:center; margin:0 10px 20px 10px;width:240px;}
+#flickr_badge_icon {float:left; margin-right:5px;}
+#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+#flickr_badge_wrapper {background-color:#000000;}
+#flickr_badge_source {padding:10px; font:11px Helvetica, Arial, Sans serif !important; color:#525252 !important;}
+#flickr_badge_source a{color:#525252;text-decoration:none;text-align:center;}
+#flickr_badge_source a p {font-size:18px;text-align:center;}
+#flickr_badge_source a:hover{color:#fdb813;}
+
+
+<!-- End of Flickr Badge -->

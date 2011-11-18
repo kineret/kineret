@@ -1,0 +1,18 @@
+﻿Hi {firstname} {lastname},
+ 
+Notification of Status {terceiro} - Nº {id_order}
+
+
+Status : {status} 
+
+If you have not managed to complete the payment.
+Click link to continue in the payment process, 
+or copy and paste it in your browser.
+
+{link}
+ 
+If you must read and download the bill visit the 
+"Purchase History" or in your account by clicking 
+"My Account" on our site.
+ 
+{shop_name} powered with PrestaShop™

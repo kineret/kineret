@@ -1,0 +1,328 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;text-align:left;font-family:inherit;}table{border-collapse:collapse;border-spacing:0;}ol,ul{list-style:none;}q:before,q:after,blockquote:before,blockquote:after{content:"";}
+
+.bgimage						{background:transparent url() left top no-repeat;display:block;outline:none;text-indent:-1000em;}
+.cleared:after					{content:" ";display:block;height:0;font-size:1px;clear:both;visibility:hidden;}
+.cufon-alt						{display:none;}
+.hidden							{display:none;}
+.offscreen						{position:absolute;bottom:-500px;}
+
+body {margin:0 0 0 0;background:#ffffff url(assets/bg4.png) repeat;height:100%;}
+
+	
+	#content{margin: 0 auto;width:860px;}
+	#header-top{position:relative;background:#280e1f;margin:0 auto;width:100%;height:50px;}
+	#menu{width:860px;margin:0 auto;}
+	#menu li {line-height:50px;margin:0 0 0 0;float:left;}
+	#menu li a {background-image:url(assets/header.png);display:block;float:left;position:relative;margin:0 30px 0 10px;}
+	#menu li a span{background:none repeat scroll 0 0 transparent;font-size:124%;}
+	#menu-home a    	{background-position: 	-22px    0px;width:48px;}
+	#menu-grupos a   	{background-position:	-109px   0px;width:59px;}
+	#menu-recs a 		{background-position:	-202px   0px;width:111px;}
+	#menu-news a 		{background-position:	-343px   0px;width:91px;}
+	#menu-calendar a	    {background-position:	-460px   0px;width:95px;}
+	#menu-contato a     {background-position:	-586px   0px;width:71px;}
+	#menu-logo a 	    {background-position:	-720px   0px;width:100px;}			
+
+	#menu-home a:hover,#menu-home a:focus,
+	.intro #menu-home a{background-position:  -22px    -47px;}
+	
+	#menu-grupos a:hover,#menu-grupos a:focus,
+	.grupos #menu-grupos a{background-position:  -109px    -47px;}
+	
+	#menu-recs a:hover,#menu-recs a:focus,
+	.news #menu-recs a{background-position:  -202px    -47px;}
+	
+	#menu-news a:hover,#menu-news a:focus,
+	.news #menu-news a{background-position:  -343px    -47px;}
+	
+	#menu-calendar a:hover,#menu-calendar a:focus,
+	.calendar #menu-calendar a{background-position:  -460px    -47px;}
+	
+	#menu-blog a:hover,#menu-blog a:focus,
+	.blog #menu-blog a{background-position:  -515px    -47px;}
+	
+	#menu-contato a:hover,#menu-contato a:focus,
+	.contato #menu-contato a{background-position:  -586px    -47px;}
+	
+	#menu li a:focus{outline:none;}
+	a:focus{outline:none;}
+	
+	
+
+	h1 {color:#000000;
+		font-family:helvetica,arial,sans-serif;
+		font-size: 1.5em;
+		letter-spacing: -1px;
+		text-align: center;}
+	
+	h2 {font-family: helvetica, arial, sans-serif;
+		letter-spacing:-1px;
+		color:#440740;
+		font-size:16pt;}
+	
+	h2.h2dourado{color: #fdb813}
+	h3 {font-family: helvetica, arial, sans-serif;
+		letter-spacing:-1px;
+		font-size:1.1em;
+		margin: 0 0 10px 0;}
+	h5 {font-family: helvetica, arial, sans-serif;
+		font-size:8pt;
+		font-weight:none;
+		color:#fff;}
+	h6 {font-family: helvetica, arial, sans-serif;
+		letter-spacing:-0.2px;
+		font-size:11pt;
+		font-weight:bold;
+		text-decoration:underline;}
+	h6.h6sobre{text-decoration:none;color:#525252;font-weight:normal;letter-spacing:0px;font-size:10pt;}
+	h6.h6sobre img{margin:0 auto;}
+
+#posts_recent{height:1000px;width:300px;}
+#content{padding-top:30px;}
+.intro #content{padding-top:40px;}
+
+#top-content {margin: 0px auto;width:860px;height:490px;position:relative;}
+
+#top-left-content {width:560px;position:relative;display:block;float:left;}
+
+
+/*------------------------------------------------*/
+/*                 PAGINA INICIAL                 */
+/*------------------------------------------------*/
+
+.intro #header-mid {background:#440740 url(assets/painel_fundo2.jpg) repeat;height:500px;}
+.intro #header-mid #painel {margin: 0 auto;width:860px;}
+.intro #header-mid #painel #logo {position:relative;top:40px;height:400px;}
+.intro #header-mid #painel #options {position:relative;top:130px;left:40px;font:normal 16pt helvetica, arial, sans-serif; color:#fdb813;}
+.intro #header-mid #painel ul li a {text-decoration:none; font:normal 14pt helvetica,arial,sans-serif; color:#fdb813;}
+.intro #header-mid #painel ul li a:hover{text-decoration:underline;}
+.intro #painel-left{display:block;float:left;width:180px;height:300px;}
+.intro #painel-left h2 {position:relative;top:70px;}
+.intro #painel-center{display:block;float:left;width:180px;height:300px;padding-top:70px;}
+.intro #painel-right{display:block;float:right;width:500px;height:300px;}
+.intro #fotos-content{display:block;float:center;}
+.intro h2{color:#fff;letter-spacing:0.5px;font-family:helvetica;font-weight:none;font-size:10pt;margin:22px 0px 0px;text-align:left;line-spacing:2px;}
+
+#patrocinio_content {margin:0 0 0 0;background:#fdb813 url(assets/bg4.png) repeat;height:95px;padding-top:0px;}
+
+#patrocinio_content #chcj {height:75px;padding:10px 3px 0 0;}
+#patrocinio_content #werner {height:75px;padding-bottom:0px;}
+#patrocinio_content #chl {height:40px;padding-bottom:10px;padding-right:5px;}
+#patrocinio_content #tenax {height:40px;padding-bottom:10px;}
+
+.div_icons {text-align:right;height:80px;}
+.div_icons img{height:50px;float:bottom; display:inline;padding:0 0 0 7px;}
+.div_icons{float:left;display:block;width:240px;}
+.div_icons p{display:none;padding-bottom:2px;height:30px;text-align:right;}
+
+
+#patrocinio_content table{margin:0 auto;height:95px;width:860px;}
+#patrocinio_content table td{padding:0px 5px;}
+#patrocinio_content table td h6{font: helvetica, 12pt;color:#fdb813;text-weight:none;text-align:left;text-decoration:none;padding-top:0px;}
+#patrocinio_content table td.patro {text-align:center;}
+#patrocinio_content table td.patro2 {text-align:center;width:100px;padding-bottom:0px;}
+#patrocinio_content table td.apoio {text-align:center;width:250px;padding-bottom:0px;}
+#patrocinio_content #enjoy {width:100px;padding-bottom:3px;}
+#patrocinio_content #novatec {width:100px;}
+#patrocinio_content #brokers {height:30px;}
+#patrocinio_content #cotrauma {height:30px;}
+#patrocinio_content #sender {height:30px;}
+#patrocinio_content #mahogany {height:30px;}
+#patrocinio_content #apoio1 {height:30px;}
+#patrocinio_content #apoio2 {height:30px;}
+#patrocinio_content #apoio3 {height:30px;}
+#patrocinio_content #apoio4 {height:30px;}
+
+.intro #content-patrocinio {background:#440740 url(assets/painel_fundo.jpg) repeat;height:50px;width:100%;}
+
+.intro #top-content #sobre{margin:0px auto 20px;}
+.intro #mid-content {margin:20px auto;width:860px; height:160px;position:relative}
+.intro #blog-content{width:560px;position:relative;display:block;float:left;padding:0 0 0 0;}
+.intro #twitter-content{width:300px;position:relative;display:block;float:left;}
+
+.intro #flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#330000;}
+.intro #flickr_badge_icon {display:block !important; margin:0 !important; border: 0px solid rgb(0, 0, 0) !important;}
+.intro #flickr_icon_td {padding:0 5px 0 0 !important;}
+.intro .flickr_badge_image {text-align:center !important;}
+.intro .flickr_badge_image img {width:150px;height:112.5px; margin:0 25px 0 0;border: 0.5px solid white !important;}
+.intro #flickr-content img {width:120px;height:90.05px; margin:15px 10px 15px 10px;border: 0.5px solid white !important;}
+.intro #flickr-content a:hover {cursor:default;}
+.intro #flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+.intro #flickr_badge_uber_wrapper a:hover,
+.intro #flickr_badge_uber_wrapper a:link,
+.intro #flickr_badge_uber_wrapper a:active,
+.intro #flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#660033;}
+.intro #flickr_badge_wrapper {background-color:#ffffff;border: solid 0px #000000;}
+.intro #flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#330000 !important;}
+
+.intro #sobre-texto,.eventos #sobre-texto,.depo #sobre-texto{margin:20px auto;}
+.intro#sobre-texto h6,.eventos #sobre-texto h6{text-indent:20px;font:normal 11pt helvetica,arial,sans-serif;text-decoration:none;padding:10px 20px;color:#525252;}
+.depo #sobre-texto h6.sobre-t{text-indent:20px;font:italic 11pt helvetica,arial,sans-serif;text-decoration:none;padding:10px 20px;color:#525252;}
+.intro #sobre-texto table td{border:2px dotted #440740;}
+.depo #sobre-texto h6.sobre-a{text-indent:20px;font:normal 11pt helvetica,arial,sans-serif;text-decoration:none;padding:3px 20px 0px;color:#fdb813;}
+.depo #sobre-texto h6.sobre-l{text-indent:20px;font:normal 11pt helvetica,arial,sans-serif;text-decoration:none;padding:0px 20px 20px;color:#440740;}
+.intro #sobre-texto table{border:2px dotted #440740;}
+.intro #sobre-texto table img {border:5px solid #fdb813;margin:10px 10px 5px 10px;position:relative;display:block;float:left;}
+.intro #sobre-texto table h6 {text-indent:0px;padding:10px;}
+
+/*------------------------------------------------*/
+/*                 GRUPOS                         */
+/*------------------------------------------------*/
+
+
+.grupos #content div h2.h2dourado{text-align: right;margin:2px 0;}
+.grupos #content h2.h2dourado a{color:#fdb813;text-decoration:underline;}
+.grupos #tabela {width:860px;position:relative;display:block;margin:0 auto;top:0px;}
+.grupos #tabela div.nome_grupos{width:860px;display:block;position:relative;margin:0 auto;}
+.grupos #tabela .nome_grupos a.a_grupos, .grupos #tabela div.desc_grupos p.tit_grupos{text-decoration:none;font-family: helvetica, arial, sans-serif;letter-spacing:-1px;font-size:16pt;padding:10px 10px 10px 40px;margin:0 10px 10px 10px;}
+.grupos #tabela div.desc_grupos{width:800px;padding:10px 0px 0px 0px;display:block;float:left;height:400px;}
+.grupos #tabela div.desc_grupos p.par_grupos{color:#440740;padding:0px 0 10px 10px;font-family: helvetica, arial, sans-serif;
+	letter-spacing:-0.2px;
+	font-size:10pt;
+	font-weight:none;}
+.grupos #tabela .desc_grupos div{display:none;}
+.grupos #grupo_yachad {color:#3aaa42;display:block;float:left;padding:5px 5px 5px 0px;}
+.grupos #grupo_aviv {color:#633418;display:block;float:left;padding:5px 5px 5px 0;}
+.grupos #grupo_medura {color:#d72b2b;display:block;float:left;padding:5px 0px 5px 0;}
+.grupos #grupo_gaash {color:#d77c2b;display:block;float:left;padding:5px 5px 5px 0;}
+.grupos #grupo_akahel {color:#2b5cd7;display:block;float:left;padding:5px 5px 5px 0;}
+.grupos #grupo_chavaia {color:#b01eca;display:block;float:left;padding:5px 5px 5px 0;}
+.grupos #yachad p span{color:#3aaa42;font-weight:none;font-size:12pt;}
+.grupos #aviv p span{color:#633418;font-weight:none;font-size:12pt;}
+.grupos #medura p span{color:#d72b2b;font-weight:none;font-size:12pt;}
+.grupos #gaash p span{color:#d77c2b;font-weight:none;font-size:12pt;}
+.grupos #akahel p span{color:#2b5cd7;font-weight:none;font-size:12pt;}
+.grupos #chavaia p span{color:#b01eca;font-weight:none;font-size:12pt;}
+.grupos #tabela div.nome_grupos #grupo_yachad:hover,.grupos #tabela div.desc_grupos #yachad p.tit_grupos {color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#3aaa42 url(assets/icone.png) bottom left no-repeat;}
+.grupos #tabela div.nome_grupos #grupo_aviv:hover,.grupos #tabela div.desc_grupos #aviv p.tit_grupos {color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#633418 url(assets/icone.png) bottom left no-repeat;}
+.grupos #tabela div.nome_grupos #grupo_medura:hover,.grupos #tabela div.desc_grupos #medura p.tit_grupos {color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#d72b2b url(assets/icone.png) bottom left no-repeat;}
+.grupos #tabela div.nome_grupos #grupo_gaash:hover,.grupos #tabela div.desc_grupos #gaash p.tit_grupos {color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#d77c2b url(assets/icone.png) bottom left no-repeat;}
+.grupos #tabela div.nome_grupos #grupo_akahel:hover,.grupos #tabela div.desc_grupos #akahel p.tit_grupos {color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#2b5cd7 url(assets/icone.png) bottom left no-repeat;}
+.grupos #tabela div.nome_grupos #grupo_chavaia:hover,.grupos #tabela div.desc_grupos #chavaia p.tit_grupos {color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#b01eca url(assets/icone.png) bottom left no-repeat;}
+.grupos #tabela div.desc_grupos p.tit_grupos {margin-bottom:10px;}
+.grupos #tabela div.desc_grupos #init_grupos h2{text-align:center;vertical-align:middle;}
+
+
+
+/*------------------------------------------------*/
+/*                 RECORDACOES                    */
+/*------------------------------------------------*/
+.recs #tabela {width:860px;margin:0 auto;top:0px;height:400px;}
+.recs #tabela div.filtro_anos{width:860;display:block;float:right;}
+.recs #tabela div.filtro_anos a{display:block;float:right;}
+.recs #tabela div.filtro_grupos{width:180px;display:block;float:left;}
+.recs #tabela div.desc_recs{width:600px;padding:10px 0px 0px 0px;display:block;float:right;height:400px;}
+
+.recs #tabela .filtro_grupos a.a_grupos{text-decoration:none;font-family: helvetica, arial, sans-serif;letter-spacing:-1px;font-size:16pt;padding:10px 10px 10px 40px;}
+.recs #tabela .filtro_grupos a.a_grupos img{margin-left:12px;float:right;}
+.recs #tabela .filtro_grupos a.a_grupos img.unchecked{display:none;}
+.recs #grupo_yachad {color:#3aaa42;display:block;float:left;padding:5px 5px 5px 0px;}
+.recs #grupo_aviv {color:#633418;display:block;float:left;padding:5px 5px 5px 0;}
+.recs #grupo_medura {color:#d72b2b;display:block;float:left;padding:5px 0px 5px 0;}
+.recs #grupo_gaash {color:#d77c2b;display:block;float:left;padding:5px 5px 5px 0;}
+.recs #grupo_akahel {color:#2b5cd7;display:block;float:left;padding:5px 5px 5px 0;}
+.recs #grupo_chavaia {color:#b01eca;display:block;float:left;padding:5px 5px 5px 0;}
+.recs #tabela div.filtro_grupos #grupo_yachad:hover{color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#3aaa42 url(assets/icone.png) bottom left no-repeat;}
+.recs #tabela div.filtro_grupos #grupo_aviv:hover{color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#633418 url(assets/icone.png) bottom left no-repeat;}
+.recs #tabela div.filtro_grupos #grupo_medura:hover{color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#d72b2b url(assets/icone.png) bottom left no-repeat;}
+.recs #tabela div.filtro_grupos #grupo_gaash:hover{color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#d77c2b url(assets/icone.png) bottom left no-repeat;}
+.recs #tabela div.filtro_grupos #grupo_akahel:hover{color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#2b5cd7 url(assets/icone.png) bottom left no-repeat;}
+.recs #tabela div.filtro_grupos #grupo_chavaia:hover{color:#fff;-moz-border-radius: 10px;border-radius: 10px;background:#b01eca url(assets/icone.png) bottom left no-repeat;}
+
+/*------------------------------------------------*/
+/*                 CONTATO                        */
+/*------------------------------------------------*/
+
+
+.contato form{position:relative;display:block;float:left;margin:30px 0;width:400px;}
+.contato textarea {width:400px;}
+.contato input {width:300px;}
+.contato textarea,.contato input{padding:10px;margin:10px 0;border-color:#440740;border-style:dotted;font-size:11pt;font-family:Helvetica, Arial, Sans serif; color:#999999;}
+.contato textarea:focus,.contato input:focus{border-color:#fdb813; color:#440740;border-style:dotted;}
+.contato form button {
+background-image:url("http://www.kineret.com.br/assets/botao_contato.png");
+border:medium none;
+cursor:pointer;
+height:41px;
+left:-6px;
+position:relative;
+width:100px;
+}
+.contato form button:hover {
+background-position:left -41px;
+}
+
+.espetaculo form{position:relative;display:block;margin:30px auto;}
+.espetaculo form table {width:760px;}
+.espetaculo form table td {padding:10px;border:#440740 solid 0pt;text-align:center;}
+.espetaculo form table td h2{color:#440740;text-align:left;margin:10px 10px;}
+.espetaculo form table td #titulodvd {padding-left:15px;}
+.espetaculo form table td h4{color:#525252;text-align:center;}
+.espetaculo form table td h6{color:#525252;text-align:center;font-size:9pt;margin:6px 0;text-decoration:none;}
+.espetaculo form img {height:250px;border:#440740 dotted 1px;margin:0 auto;}
+.espetaculo form #dvd{height:150px;border:#440740 dotted 1px;margin:0 auto;}
+.espetaculo form #combo{height:180px;border:#440740 dotted 1px;margin:0 auto;}
+
+.espetaculo textarea {width:400px;}
+.espetaculo input {width:300px;}
+.espetaculo select #qtdcamisa{width:50px;padding:5px;}
+.espetaculo select #tamanho{width:300px;padding:5px;}
+.espetaculo textarea,.espetaculo input{padding:10px;margin:10px 0;border-color:#440740;border-style:dotted;font-size:11pt;font-family:Helvetica, Arial, Sans serif; color:#999999;}
+.espetaculo textarea:focus,.espetaculo input:focus{border-color:#fdb813; color:#440740;border-style:dotted;}
+.espetaculo form button {margin:0 auto;
+background-image:url("http://www.kineret.com.br/assets/botao_contato.png");
+border:medium none;
+cursor:pointer;
+height:41px;
+left:-6px;
+position:relative;
+width:100px;
+}
+.espetaculo form button:hover {
+background-position:left -41px;
+}
+
+
+
+
+
+/*------------------------------------------------*/
+/*                     FOTOS                      */
+/*------------------------------------------------*/
+
+
+.fotos #capas {margin:40px auto;diplay:block;float:center;}
+.grupos #check {background-image:url("../assets/checked.png");}
+
+
+/*------------------------------------------------*/
+/*                 LOJA                           */
+/*------------------------------------------------*/
+
+	
+
+.loja iframe{height:1200px;position:relative;display:block;width:860px;margin:0 auto;overflow: hidden;}
+
+
+/*------------------------------------------------*/
+/*                 VIDEOS                         */
+/*------------------------------------------------*/
+
+
+
+/*------------------------------------------------*/
+/*                 INSCRICAO                      */
+/*------------------------------------------------*/
+
+
+.inscricao #mc_embed_signup{width:300px;}
+.inscricao form #formfoto{width:500px;padding:10px 30px;overflow: hidden;clear: both;}
+
+.inscricao form {font-family:helvetica, arial, sans serif;
+				 font-size:11pt;
+				 color:#440740;
+				 letter-spacing:-0.2px;}
+.inscricao form fieldset .mc-address-group{width:500px;padding:10px 30px;overflow: hidden;clear: both;}
+.inscricao form fieldset .mc-field-group{width:500px;padding:10px 30px;clear: both;overflow: hidden;}
+.inscricao form fieldset .mc-field-group label{width:500px;}
+.inscricao form fieldset .mc-field-group select{width:200px;}

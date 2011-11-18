@@ -1,0 +1,931 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;text-align:left;font-family:inherit;}table{border-collapse:collapse;border-spacing:0;}ol,ul{list-style:none;}q:before,q:after,blockquote:before,blockquote:after{content:"";}
+
+.bgimage						{background:transparent url() left top no-repeat;display:block;outline:none;text-indent:-1000em;}
+.cleared:after					{content:" ";display:block;height:0;font-size:1px;clear:both;visibility:hidden;}
+.cufon-alt						{display:none;}
+.hidden							{display:none;}
+.offscreen						{position:absolute;bottom:-500px;}
+
+body {margin:0 0 0 0;background:#fff url(assets/bg.png) repeat;height:100%;}
+
+	
+	#header-top{background:#fff url(assets/header.png) repeat;margin:0 auto;width:100%;height:91px;}
+	#header-top h3{top:47px;position:relative;display:block;float:left;}
+	#header-top #voltar{top:47px;position:relative;display:block;float:right;text-align:right;}
+	#header-top #totvs {height:45px;left:40px;top:6px;position:relative;display:block;float:left;}
+	#header-top #sigma {height:40px;top:10px;right:40px;position:relative;display:block;float:right;}
+	
+	#content{margin:40px auto;width:1000px;position:relative;display:block;float:center;}
+
+	#menu{background-image:url(assets/cadeiafinal.png);width:658px;height:490px;margin:0 auto;position:relative;}
+	#menu li{background-image:url(assets/cadeiafinal.png);position:absolute;}
+	#menu li a{background-image:url(assets/cadeiafinal.png);}
+	#menu li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+
+	#menu-orcamento a			{position:absolute;background-position:	-120px   -54px;top:54px;left:120px;height:67px;width:306px;}
+	#menu-suprimentos a 		{position:absolute;background-position:	-120px   -123px;top:123px;height:67px;width:306px;left:120px;}
+	#menu-financeiro a	   		{position:absolute;background-position:	-120px   -191px;top:191px;left:120px;height:67px;width:306px;}
+	#menu-contabilidade a 	 	{position:absolute;background-position:	-77px   -262px;top:262px;left:77px;height:39px;width:515px;}    
+	#menu-custos a		     	{position:absolute;background-position:	-77px   -301px;top:301px;left:77px;height:39px;width:515px;}
+	#menu-treinamento a	     	{position:absolute;background-position:	-77px   -341px;top:341px;left:77px;height:39px;width:515px;}
+	#menu-gestao  	   			{background-position:	-20px   -406px;top:406px;left:20px;height:67px;width:610px;}
+	#menu-patrimonio a 	        {position:absolute;background-position:	-431px   -54px;top:54px;left:431px;height:67px;width:192px;}
+	#menu-manutencao a 	        {position:absolute;background-position:	-431px   -123px;top:123px;left:431px;height:67px;width:192px;}
+	#menu-fiscal a 	  			{position:absolute;background-position:	-431px   -191px;top:191px;left:431px;height:67px;width:192px;}
+	#menu-comercial2 a   		{position:absolute;background-position:	-26px   -53px;top:53px;left:26px;height:208px;width:90px;}
+			
+		#menu-orcamento a:hover,#menu-orcamento a:focus,
+		.orcamento #menu-orcamento a{background-position:	-120px   -544px;}
+		#menu-suprimentos a:hover,#menu-suprimentos a:focus,
+		.suprimentos #menu-suprimentos a{background-position:	-120px   -613px;}
+		#menu-financeiro a:hover,#menu-financeiro a:focus,
+		.financeiro #menu-financeiro a{background-position:	-120px   -681px;}
+		#menu-contabilidade a:hover,#menu-contabilidade a:focus,
+		.contabilidade #menu-contabilidade a{background-position:	-77px   -752px;}
+		#menu-custos a:hover,#menu-custos a:focus,
+		.custos #menu-custos a{background-position:	-77px   -791px;}
+		#menu-treinamento a:hover,#menu-treinamento a:focus,
+		.treinamento #menu-treinamento a{background-position:	-77px   -831px;}
+	
+	#menu-gestao a{backgroun-image:url(assets/cadeiafinal.png);}
+	#menu-gestao a.seminarios 			{position:absolute;background-position:	-20px   -406px;top:49px;left:3px;height:20px;width:62px;}
+	#menu-gestao a.workshop 			{position:absolute;background-position:	-20px   -406px;top:49px;left:73px;height:20px;width:65px;}
+	#menu-gestao a.requisitos 			{position:absolute;background-position:	-20px   -406px;top:49px;left:145px;height:18px;width:117px;}
+	#menu-gestao a.requisitosn 			{position:absolute;background-position:	-20px   -406px;top:49px;left:271px;height:18px;width:143px;}
+	#menu-gestao a.testes 				{position:absolute;background-position:	-20px   -406px;top:49px;left:422px;height:20px;width:95px;}
+	#menu-gestao a.treinamentos 		{position:absolute;background-position:	-20px   -406px;top:49px;left:520px;height:20px;width:80px;}
+
+		#menu-gestao:hover,#menu-gestao:focus,
+		.gestao #menu-gestao a{background-position:	-20px   -896px;}
+
+		#menu-gestao a.seminarios:hover 	{background-position:	-24px   -1017px;}
+		#menu-gestao a.workshop:hover	 	{background-position:	-93px   -1017px;}
+		#menu-gestao a.requisitos:hover 	{background-position:	-165px   -1017px;}
+		#menu-gestao a.requisitosn:hover 	{background-position:	-291px   -1017px;}
+		#menu-gestao a.testes:hover 		{background-position:	-442px   -1017px;}
+		#menu-gestao a.treinamentos:hover 	{background-position:	-539px   -1017px;}
+	
+		#menu-patrimonio a:hover,#menu-patrimonio a:focus,
+		.patrimonio #menu-patrimonio a   {background-position:	-431px   -544px;}
+		#menu-manutencao a:hover,#menu-manutencao a:focus,
+		.manutencao #menu-manutencao a   {background-position:	-431px   -613px;}
+		#menu-fiscal a:hover,#menu-fiscal a:focus,
+		.acustos #menu-acustos a	{background-position:	-431px   -681px;}
+		#menu-comercial2 a:hover,#menu-comercial2 a:focus,
+		.comercial2 #menu-comercial2 a{background-position:	-26px   -543px;}
+
+		table {margin:0px auto;height:100%;}
+		table tr td {padding:20px;}
+		table tr td h4{margin:0 auto;}
+
+	#menu li a:focus{outline:none;}
+	a:focus{outline:none;}
+	
+	
+
+	h1 {color:#000000;
+		font-family:helvetica,arial,sans-serif;
+		font-size: 1.5em;
+		letter-spacing: -1px;
+		text-align: center;}
+	
+	h2 {font-family: helvetica, arial, sans-serif;
+		letter-spacing:-1px;
+		color:#440740;
+		font-size:16pt;}
+	
+	h2.h2dourado{color: #fdb813}
+	h3, h3 a {color: #e3ecf3;font-family: helvetica, arial, sans-serif;
+		letter-spacing:-1px;
+		font-size:1.1em;
+		margin: 0 0 10px 20px;text-decoration:none;}
+		
+	h4 {color: #43443f;font-family: helvetica, arial, sans-serif;
+		letter-spacing:-1px;
+		font-size:11pt;
+		margin: 20px 0 10px 20px;}
+	h5 {font-family: helvetica, arial, sans-serif;
+		letter-spacing:-0.2px;
+		font-size:10pt;
+		font-weight:none;text-decoration:none;color:#fff;}
+	h6 {font-family: helvetica, arial, sans-serif;
+		letter-spacing:-0.2px;
+		font-size:11pt;
+		font-weight:bold;}
+	h6.h6sobre{text-decoration:none;color:#525252;font-weight:normal;letter-spacing:0px;font-size:10pt;}
+#titulos {width:1000px;margin:0 auto;height:20px;}
+#titulos h4 {position:relative;}
+#cadeia {margin: 0 20px;}
+
+	.orcamento #menua{background-image:url(assets/aorcamento.png);width:450px;height:140px;margin:0 auto;position:relative;display:block;float:left;}
+	.orcamento #menua li a{background-image:url(assets/aorcamento.png);display:block;position:absolute;}
+	.orcamento #menua li a:hover{background-image:url(assets/aorcamento.png);position:absolute;}
+	.orcamento #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	
+	.orcamento #menua #menu-1 a				{background-position:	-1px   -28px;top:28px;left:1px;height:72px;width:145px;}
+	.orcamento #menua #menu-2 a 			{background-position:	-150px   -0px;top:0px;left:150px;height:61px;width:145px;}
+	.orcamento #menua #menu-3 a	   			{background-position:	-150px   -68px;top:68px;left:150px;height:61px;width:145px;}
+	.orcamento #menua #menu-4 a 	 		{background-position:	-300px   -28px;top:28px;left:300px;height:72px;width:145px;}    
+	.orcamento #menua #menu-1 a:hover				{background-position:	-1px   -200px;top:28px;left:1px;height:72px;width:145px;}
+	.orcamento #menua #menu-2 a:hover 				{background-position:	-150px   -172px;top:0px;left:150px;height:61px;width:145px;}
+	.orcamento #menua #menu-3 a:hover	   			{background-position:	-150px   -240px;top:68px;left:150px;height:61px;width:145px;}
+	.orcamento #menua #menu-4 a:hover 	 			{background-position:	-300px   -200px;top:28px;left:300px;height:72px;width:145px;}    
+
+	.orcamento #menuf {background-image:url(assets/forcamento.png);background-position:0px 28px;width:450px;height:110px;margin:0 auto;position:relative;display:block;float:left;}
+	.orcamento #menuf li a{background-image:url(assets/forcamento.png);display:block;position:absolute;}
+	.orcamento #menuf li a:hover{background-image:url(assets/forcamento.png);position:absolute;}
+	.orcamento #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	
+	.orcamento #menuf #menu-1 a				{background-position:	-1px   -0px;top:28px;left:1px;height:54px;width:140px;}
+	.orcamento #menuf #menu-2 a 			{background-position:	-141px   -0px;top:28px;left:141px;height:54px;width:135px;}
+	.orcamento #menuf #menu-3 a	   			{background-position:	-275px   -0px;top:28px;left:275px;height:54px;width:140px;}
+	.orcamento #menuf #menu-1 a:hover				{background-position:	-1px   -92px;top:28px;}
+	.orcamento #menuf #menu-2 a:hover 				{background-position:	-141px   -92px;top:28px;}
+	.orcamento #menuf #menu-3 a:hover	   			{background-position:	-275px   -92px;top:28px;}
+	
+	
+	.suprimentos #menua{background-image:url(assets/asuprimentos.png);width:420px;height:250px;margin:0 auto;position:relative;display:block;float:left;}
+	.suprimentos #menua li a{background-image:url(assets/asuprimentos.png);display:block;position:absolute;}
+	.suprimentos #menua li a:hover{background-image:url(assets/asuprimentos.png);position:absolute;}
+	.suprimentos #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	
+	.suprimentos #menua #menu-1 a				{background-position:	-1px   -0px;top:0px;left:1px;height:57px;width:138px;}
+	.suprimentos #menua #menu-2 a	 			{background-position:	-139px   -0px;top:0px;left:139px;height:57px;width:138px;}
+	.suprimentos #menua #menu-3 a	   			{background-position:	-139px   -192px;top:192px;left:139px;height:57px;width:138px;}
+	.suprimentos #menua #menu-4 a				{background-position:	-1px   -64px;top:64px;left:1px;height:57px;width:138px;}
+	.suprimentos #menua #menu-5 a	 			{background-position:	-139px   -64px;top:64px;left:139px;height:57px;width:138px;}
+	.suprimentos #menua #menu-6 a	   			{background-position:	-278px   -64px;top:64px;left:278px;height:57px;width:138px;}
+	.suprimentos #menua #menu-7 a				{background-position:	-1px   -128px;top:128px;left:1px;height:57px;width:138px;}
+	.suprimentos #menua #menu-8 a	 			{background-position:	-139px   -128px;top:128px;left:139px;height:57px;width:138px;}
+	.suprimentos #menua #menu-9 a	   			{background-position:	-278px   -128px;top:128px;left:278px;height:57px;width:138px;}
+	.suprimentos #menua #menu-10 a				{background-position:	-1px   -192px;top:192px;left:1px;height:57px;width:138px;}
+	.suprimentos #menua #menu-1 a:hover				{background-position:	-1px   -252px;}
+	.suprimentos #menua #menu-2 a:hover 			{background-position:	-139px   -252px;}
+	.suprimentos #menua #menu-3 a:hover	   			{background-position:	-139px   -444px;}
+	.suprimentos #menua #menu-4 a:hover				{background-position:	-1px   -316px;}
+	.suprimentos #menua #menu-5 a:hover 			{background-position:	-139px   -316px;}
+	.suprimentos #menua #menu-6 a:hover	   			{background-position:	-278px   -316px;}
+	.suprimentos #menua #menu-7 a:hover				{background-position:	-1px   -380px;}
+	.suprimentos #menua #menu-8 a:hover 			{background-position:	-139px   -380px;}
+	.suprimentos #menua #menu-9 a:hover	   			{background-position:	-278px   -380px;}
+	.suprimentos #menua #menu-10 a:hover			{background-position:	-1px   -444px;}
+	
+	.suprimentos #menuf{background-image:url(assets/fsuprimentos.png);width:420px;height:116px;margin:0 auto;position:relative;display:block;float:left;}
+	.suprimentos #menuf li a{background-image:url(assets/fsuprimentos.png);display:block;position:absolute;}
+	.suprimentos #menuf li a:hover{background-image:url(assets/fsuprimentos.png);position:absolute;}
+	.suprimentos #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	
+	.suprimentos #menuf #menu-1 a				{background-position:	-0px   -32px;top:32px;left:0px;height:57px;width:136px;}
+	.suprimentos #menuf #menu-2 a	 			{background-position:	-138px   -0px;top:0px;left:138px;height:57px;width:136px;}
+	.suprimentos #menuf #menu-3 a	   			{background-position:	-275px   -0px;top:0px;left:275px;height:57px;width:136px;}
+	.suprimentos #menuf #menu-4 a	 			{background-position:	-138px   -57px;top:57px;left:138px;height:58px;width:136px;}
+	.suprimentos #menuf #menu-5 a	   			{background-position:	-275px   -57px;top:57px;left:275px;height:58px;width:136px;}
+	.suprimentos #menuf #menu-1 a:hover				{background-position:	-0px   -209px;}
+	.suprimentos #menuf #menu-2 a:hover	 			{background-position:	-138px   -177px;}
+	.suprimentos #menuf #menu-3 a:hover	   			{background-position:	-275px   -177px;}
+	.suprimentos #menuf #menu-4 a:hover	 			{background-position:	-138px   -234px;}
+	.suprimentos #menuf #menu-5 a:hover	   			{background-position:	-275px   -234px;}
+	.suprimentos #menuf #menu-1 a:hover, .suprimentos #menuf #menu-1 a:focus,
+	.suprimentos .item1 #menuf #menu-1 a	 			{background-position:	-0px   -209px;}
+	.suprimentos #menuf #menu-2 a:hover, .suprimentos #menuf #menu-2 a:focus,
+	.suprimentos .item2 #menuf #menu-2 a	 			{background-position:	-138px   -177px;}
+	.suprimentos #menuf #menu-3 a:hover, .suprimentos #menuf #menu-3 a:focus,
+	.suprimentos .item3 #menuf #menu-3 a	 			{background-position:	-275px   -177px;}
+	.suprimentos #menuf #menu-4 a:hover, .suprimentos #menuf #menu-4 a:focus,
+	.suprimentos .item4 #menuf #menu-4 a				{background-position:	-138px   -234px;}
+	.suprimentos #menuf #menu-5 a:hover, .suprimentos #menuf #menu-5 a:focus,
+	.suprimentos .item5 #menuf #menu-5 a				{background-position:	-275px   -234px;}
+	
+	
+		
+	.financeiro #menua{background-image:url(assets/afinanceiro.png);width:427px;height:170px;margin:0 auto;position:relative;display:block;float:left;}
+	.financeiro #menua li a{background-image:url(assets/afinanceiro.png);display:block;position:absolute;}
+	.financeiro #menua li a:hover{background-image:url(assets/afinanceiro.png);position:absolute;}
+	.financeiro #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	
+	.financeiro #menua #menu-1 a				{background-position:	-1px   -30px;top:30px;left:1px;height:57px;width:133px;}
+	.financeiro #menua #menu-2 a	 			{background-position:	-135px   -2px;top:2px;left:135px;height:57px;width:133px;}
+	.financeiro #menua #menu-3 a				{background-position:	-1px   -87px;top:87px;left:1px;height:57px;width:133px;}
+	.financeiro #menua #menu-4 a	 			{background-position:	-135px   -57px;top:57px;left:135px;height:57px;width:133px;}
+	.financeiro #menua #menu-5 a	   			{background-position:	-270px   -57px;top:57px;left:270px;height:57px;width:133px;}
+	.financeiro #menua #menu-6 a	 			{background-position:	-135px   -115px;top:115px;left:135px;height:57px;width:133px;}
+	.financeiro #menua #menu-1 a:hover				{background-position:	-1px   -201px;}
+	.financeiro #menua #menu-2 a:hover	 			{background-position:	-135px   -173px;}
+	.financeiro #menua #menu-3 a:hover				{background-position:	-1px   -258px;}
+	.financeiro #menua #menu-4 a:hover	 			{background-position:	-135px   -228px;}
+	.financeiro #menua #menu-5 a:hover	   			{background-position:	-270px   -228px;}
+	.financeiro #menua #menu-6 a:hover	 			{background-position:	-135px   -286px;}
+
+	.financeiro #menuf{background-image:url(assets/ffinanceiro.png);background-repeat:no-repeat;width:427px;height:165px;margin:0 auto;position:relative;display:block;float:left;}
+	.financeiro #menuf li a{background-image:url(assets/ffinanceiro.png);display:block;position:absolute;}
+	.financeiro #menuf li a:hover{background-image:url(assets/ffinanceiro.png);position:absolute;}
+	.financeiro #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.financeiro #menuf #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:57px;width:141px;}
+	.financeiro #menuf #menu-2 a	 			{background-position:	-1px   -57px;top:57px;left:1px;height:55px;width:141px;}
+	.financeiro #menuf #menu-3 a	 			{background-position:	-1px   -113px;top:113px;left:1px;height:57px;width:141px;}
+	.financeiro #menuf #menu-4 a				{background-position:	-141px   -26px;top:26px;left:141px;height:57px;width:141px;}
+	.financeiro #menuf #menu-5 a				{background-position:	-141px   -85px;top:85px;left:141px;height:57px;width:141px;}
+	.financeiro #menuf #menu-6 a	   			{background-position:	-282px   -57px;top:57px;left:282px;height:57px;width:141px;}
+	.financeiro #menuf #menu-1 a:hover, .financeiro #menuf #menu-1 a:focus,
+	.financeiro .item1 #menuf #menu-1 a	 			{background-position:	-1px   -180px;}
+	.financeiro #menuf #menu-2 a:hover, .financeiro #menuf #menu-2 a:focus,
+	.financeiro .item2 #menuf #menu-2 a	 			{background-position:	-1px   -237px;}
+	.financeiro #menuf #menu-3 a:hover, .financeiro #menuf #menu-3 a:focus,
+	.financeiro .item3 #menuf #menu-3 a	 			{background-position:	-1px   -293px;}
+	.financeiro #menuf #menu-4 a:hover, .financeiro #menuf #menu-4 a:focus,
+	.financeiro .item4 #menuf #menu-4 a				{background-position:	-141px   -206px;}
+	.financeiro #menuf #menu-5 a:hover, .financeiro #menuf #menu-5 a:focus,
+	.financeiro .item5 #menuf #menu-5 a				{background-position:	-141px   -265px;}
+	.financeiro #menuf #menu-6 a:hover, .financeiro #menuf #menu-6 a:focus,
+	.financeiro .item6 #menuf #menu-6 a	   			{background-position:	-282px   -237px;}
+	
+	
+	.treinamento #menua{background-image:url(assets/atreinamento.png);width:300px;height:425px;margin:0 auto;position:relative;}
+	.treinamento #menua li a{background-image:url(assets/atreinamento.png);display:block;position:absolute;}
+	.treinamento #menua li a:hover{background-image:url(assets/atreinamento.png);position:absolute;}
+	.treinamento #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.treinamento #menua #menu-1 a	 			{background-position:	0px   -0px;top:0px;left:0px;height:68px;width:160px;}
+	.treinamento #menua #menu-2 a	 			{background-position:	0px   -69px;top:69px;left:0px;height:68px;width:160px;}
+	.treinamento #menua #menu-3 a	 			{background-position:	0px   -139px;top:139px;left:0px;height:68px;width:160px;}
+	.treinamento #menua #menu-4 a	 			{background-position:	0px   -209px;top:209px;left:0px;height:69px;width:160px;}
+	.treinamento #menua #menu-5 a	 			{background-position:	0px   -280px;top:280px;left:0px;height:68px;width:160px;}
+	.treinamento #menua #menu-6 a	 			{background-position:	0px   -351px;top:351px;left:0px;height:68px;width:160px;}
+	.treinamento #menua #menu-1 a:hover	 			{background-position:	-0px   -427px;}
+	.treinamento #menua #menu-2 a:hover	 			{background-position:	-0px   -496px;}
+	.treinamento #menua #menu-3 a:hover	 			{background-position:	-0px   -566px;}
+	.treinamento #menua #menu-4 a:hover	 			{background-position:	-0px   -636px;}
+	.treinamento #menua #menu-5 a:hover	 			{background-position:	-0px   -707px;}
+	.treinamento #menua #menu-6 a:hover	 			{background-position:	-0px   -778px;}
+		
+	.treinamento #menuf{background-image:url(assets/ftreinamento.png);width:300px;height:425px;margin:0 auto;position:relative;}
+	.treinamento #menuf li a{background-image:url(assets/ftreinamento.png);display:block;position:absolute;}
+	.treinamento #menuf li a:hover{background-image:url(assets/ftreinamento.png);position:absolute;}
+	.treinamento #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.treinamento #menuf #menu-1 a	 			{background-position:	0px   -0px;top:0px;left:0px;height:68px;width:160px;}
+	.treinamento #menuf #menu-2 a	 			{background-position:	0px   -69px;top:69px;left:0px;height:68px;width:160px;}
+	.treinamento #menuf #menu-3 a	 			{background-position:	0px   -139px;top:139px;left:0px;height:68px;width:160px;}
+	.treinamento #menuf #menu-4 a	 			{background-position:	0px   -209px;top:209px;left:0px;height:69px;width:160px;}
+	.treinamento #menuf #menu-5 a	 			{background-position:	0px   -280px;top:279px;left:0px;height:68px;width:160px;}
+	.treinamento #menuf #menu-6 a	 			{background-position:	0px   -351px;top:351px;left:0px;height:68px;width:160px;}
+	.treinamento #menuf #menu-1 a:hover	 			{background-position:	-0px   -427px;}
+	.treinamento #menuf #menu-2 a:hover	 			{background-position:	-0px   -496px;}
+	.treinamento #menuf #menu-3 a:hover	 			{background-position:	-0px   -566px;}
+	.treinamento #menuf #menu-4 a:hover	 			{background-position:	-0px   -636px;}
+	.treinamento #menuf #menu-5 a:hover	 			{background-position:	-0px   -707px;}
+	.treinamento #menua #menu-6 a:hover	 			{background-position:	-0px   -778px;}
+	
+	
+	.treinamento #menuf #menu-1 a:hover, .treinamento #menuf #menu-1 a:focus,
+	.treinamento .item1 #menuf #menu-1 a	 			{background-position:	-0px   -427px;}
+	.treinamento #menuf #menu-2 a:hover, .treinamento #menuf #menu-2 a:focus,
+	.treinamento .item2 #menuf #menu-2 a	 			{background-position:	-0px   -496px;}
+	.treinamento #menuf #menu-3 a:hover, .treinamento #menuf #menu-3 a:focus,
+	.treinamento .item3 #menuf #menu-3 a	 			{background-position:	-0px   -566px;}
+	.treinamento #menuf #menu-4 a:hover, .treinamento #menuf #menu-4 a:focus,
+	.treinamento .item4 #menuf #menu-4 a				{background-position:	-0px   -636px;}
+	.treinamento #menuf #menu-5 a:hover, .treinamento #menuf #menu-5 a:focus,
+	.treinamento .item5 #menuf #menu-5 a				{background-position:	-0px   -707px;}
+	.treinamento #menuf #menu-6 a:hover, .treinamento #menuf #menu-6 a:focus,
+	.treinamento .item6 #menuf #menu-6 a				{background-position:	-0px   -778px;}
+	
+	.manutencao #menua{background-image:url(assets/aativos.png);width:300px;height:350px;margin:0 auto;position:relative;}
+	.manutencao #menua li a{background-image:url(assets/aativos.png);display:block;position:absolute;}
+	.manutencao #menua li a:hover{background-image:url(assets/aativos.png);position:absolute;}
+	.manutencao #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.manutencao #menua #menu-1 a	 			{background-position:	0px   -0px;top:0px;left:0px;height:68px;width:140px;}
+	.manutencao #menua #menu-2 a	 			{background-position:	0px   -69px;top:69px;left:0px;height:68px;width:140px;}
+	.manutencao #menua #menu-3 a	 			{background-position:	0px   -139px;top:139px;left:0px;height:68px;width:140px;}
+	.manutencao #menua #menu-4 a	 			{background-position:	0px   -209px;top:209px;left:0px;height:68px;width:140px;}
+	.manutencao #menua #menu-5 a	 			{background-position:	0px   -279px;top:279px;left:0px;height:68px;width:140px;}
+	.manutencao #menua #menu-1 a:hover	 			{background-position:	-0px   -390px;}
+	.manutencao #menua #menu-2 a:hover	 			{background-position:	-0px   -460px;}
+	.manutencao #menua #menu-3 a:hover	 			{background-position:	-0px   -530px;}
+	.manutencao #menua #menu-4 a:hover	 			{background-position:	-0px   -600px;}
+	.manutencao #menua #menu-5 a:hover	 			{background-position:	-0px   -670px;}
+		
+	.manutencao #menuf{background-image:url(assets/aativos.png);width:300px;height:350px;margin:0 auto;position:relative;}
+	.manutencao #menuf li a{background-image:url(assets/aativos.png);display:block;position:absolute;}
+	.manutencao #menuf li a:hover{background-image:url(assets/aativos.png);position:absolute;}
+	.manutencao #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.manutencao #menuf #menu-1 a	 			{background-position:	0px   -0px;top:0px;left:0px;height:68px;width:140px;}
+	.manutencao #menuf #menu-2 a	 			{background-position:	0px   -69px;top:69px;left:0px;height:68px;width:140px;}
+	.manutencao #menuf #menu-3 a	 			{background-position:	0px   -139px;top:139px;left:0px;height:68px;width:140px;}
+	.manutencao #menuf #menu-4 a	 			{background-position:	0px   -209px;top:209px;left:0px;height:68px;width:140px;}
+	.manutencao #menuf #menu-5 a	 			{background-position:	0px   -279px;top:279px;left:0px;height:68px;width:140px;}
+	.manutencao #menuf #menu-1 a:hover	 			{background-position:	-0px   -390px;}
+	.manutencao #menuf #menu-2 a:hover	 			{background-position:	-0px   -460px;}
+	.manutencao #menuf #menu-3 a:hover	 			{background-position:	-0px   -530px;}
+	.manutencao #menuf #menu-4 a:hover	 			{background-position:	-0px   -600px;}
+	.manutencao #menuf #menu-5 a:hover	 			{background-position:	-0px   -670px;}
+	
+	
+	.manutencao #menuf #menu-1 a:hover, .manutencao #menuf #menu-1 a:focus,
+	.manutencao .item1 #menuf #menu-1 a	 			{background-position:	-0px   -390px;}
+	.manutencao #menuf #menu-2 a:hover, .manutencao #menuf #menu-2 a:focus,
+	.manutencao .item2 #menuf #menu-2 a	 			{background-position:	-0px   -460px;}
+	.manutencao #menuf #menu-3 a:hover, .manutencao #menuf #menu-3 a:focus,
+	.manutencao .item3 #menuf #menu-3 a	 			{background-position:	-0px   -530px;}
+	.manutencao #menuf #menu-4 a:hover, .manutencao #menuf #menu-4 a:focus,
+	.manutencao .item4 #menuf #menu-4 a				{background-position:	-0px   -600px;}
+	.manutencao #menuf #menu-5 a:hover, .manutencao #menuf #menu-5 a:focus,
+	.manutencao .item5 #menuf #menu-5 a				{background-position:	-0px   -670px;}
+	
+	.patrimonio #menua{background-image:url(assets/apatrimonio.png);width:300px;height:340px;margin:0 auto;position:relative;}
+	.patrimonio #menua li a{background-image:url(assets/apatrimonio.png);display:block;position:absolute;}
+	.patrimonio #menua li a:hover{background-image:url(assets/apatrimonio.png);position:absolute;}
+	.patrimonio #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.patrimonio #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:46px;width:180px;}
+	.patrimonio #menua #menu-2 a	 			{background-position:	-1px   -46px;top:46px;left:1px;height:46px;width:180px;}
+	.patrimonio #menua #menu-3 a	 			{background-position:	-1px   -92px;top:92px;left:1px;height:46px;width:180px;}
+	.patrimonio #menua #menu-4 a	 			{background-position:	-1px   -138px;top:138px;left:1px;height:46px;width:180px;}
+	.patrimonio #menua #menu-5 a	 			{background-position:	-1px   -184px;top:184px;left:1px;height:46px;width:180px;}
+	.patrimonio #menua #menu-6 a	 			{background-position:	-1px   -230px;top:230px;left:1px;height:46px;width:180px;}
+	.patrimonio #menua #menu-1 a:hover	 			{background-position:	-323px   -2px;}
+	.patrimonio #menua #menu-2 a:hover	 			{background-position:	-323px   -48px;}
+	.patrimonio #menua #menu-3 a:hover	 			{background-position:	-323px   -94px;}
+	.patrimonio #menua #menu-4 a:hover	 			{background-position:	-323px   -140px;}
+	.patrimonio #menua #menu-5 a:hover	 			{background-position:	-323px   -186px;}
+	.patrimonio #menua #menu-6 a:hover	 			{background-position:	-323px   -232px;}
+	
+	
+	.patrimonio #menuf{background-image:url(assets/apatrimonio.png);width:300px;height:340px;margin:0 auto;position:relative;}
+	.patrimonio #menuf li a{background-image:url(assets/apatrimonio.png);display:block;position:absolute;}
+	.patrimonio #menuf li a:hover{background-image:url(assets/apatrimonio.png);position:absolute;}
+	.patrimonio #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.patrimonio #menuf #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:46px;width:180px;}
+	.patrimonio #menuf #menu-2 a	 			{background-position:	-1px   -46px;top:46px;left:1px;height:46px;width:180px;}
+	.patrimonio #menuf #menu-3 a	 			{background-position:	-1px   -92px;top:92px;left:1px;height:46px;width:180px;}
+	.patrimonio #menuf #menu-4 a	 			{background-position:	-1px   -138px;top:138px;left:1px;height:46px;width:180px;}
+	.patrimonio #menuf #menu-5 a	 			{background-position:	-1px   -184px;top:184px;left:1px;height:46px;width:180px;}
+	.patrimonio #menuf #menu-6 a	 			{background-position:	-1px   -230px;top:230px;left:1px;height:46px;width:180px;}
+	.patrimonio #menuf #menu-1 a:hover	 			{background-position:	-323px   -2px;}
+	.patrimonio #menuf #menu-2 a:hover	 			{background-position:	-323px   -48px;}
+	.patrimonio #menuf #menu-3 a:hover	 			{background-position:	-323px   -94px;}
+	.patrimonio #menuf #menu-4 a:hover	 			{background-position:	-323px   -140px;}
+	.patrimonio #menuf #menu-5 a:hover	 			{background-position:	-323px   -186px;}
+	.patrimonio #menuf #menu-6 a:hover	 			{background-position:	-323px   -232px;}
+	
+	.patrimonio #menuf #menu-1 a:hover, .patrimonio #menuf #menu-1 a:focus,
+	.patrimonio .item1 #menuf #menu-1 a	 			{background-position:	-323px   -2px;}
+	.patrimonio #menuf #menu-2 a:hover, .patrimonio #menuf #menu-2 a:focus,
+	.patrimonio .item2 #menuf #menu-2 a	 			{background-position:	-323px   -48px;}
+	.patrimonio #menuf #menu-3 a:hover, .patrimonio #menuf #menu-3 a:focus,
+	.patrimonio .item3 #menuf #menu-3 a	 			{background-position:	-323px   -94px;}
+	.patrimonio #menuf #menu-4 a:hover, .patrimonio #menuf #menu-4 a:focus,
+	.patrimonio .item4 #menuf #menu-4 a				{background-position:	-323px   -140px;}
+	.patrimonio #menuf #menu-5 a:hover, .patrimonio #menuf #menu-5 a:focus,
+	.patrimonio .item5 #menuf #menu-5 a				{background-position:	-323px   -186px;}
+	.patrimonio #menuf #menu-6 a:hover, .patrimonio #menuf #menu-6 a:focus,
+	.patrimonio .item6 #menuf #menu-6 a	   			{background-position:	-323px   -232px;}
+	
+	
+	
+	.contabilidade #menua{background-image:url(assets/acontabilidade.png);width:420px;height:330px;margin:0 auto;position:relative;}
+	.contabilidade #menua li a{background-image:url(assets/acontabilidade.png);display:block;position:absolute;}
+	.contabilidade #menua li a:hover{background-image:url(assets/acontabilidade.png);position:absolute;}
+	.contabilidade #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.contabilidade #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:42px;width:270px;}
+	.contabilidade #menua #menu-2 a	 			{background-position:	-1px   -42px;top:42px;left:1px;height:42px;width:270px;}
+	.contabilidade #menua #menu-3 a	 			{background-position:	-1px   -84px;top:84px;left:1px;height:42px;width:270px;}
+	.contabilidade #menua #menu-4 a	 			{background-position:	-1px   -126px;top:126px;left:1px;height:42px;width:270px;}
+	.contabilidade #menua #menu-5 a	 			{background-position:	-1px   -168px;top:168px;left:1px;height:39px;width:270px;}
+	.contabilidade #menua #menu-6 a	 			{background-position:	-1px   -208px;top:208px;left:1px;height:39px;width:270px;}
+	.contabilidade #menua #menu-7 a	 			{background-position:	-1px   -248px;top:248px;left:1px;height:39px;width:270px;}
+	.contabilidade #menua #menu-8 a	 			{background-position:	-1px   -288px;top:288px;left:1px;height:39px;width:270px;}
+	.contabilidade #menua #menu-9 a	 			{background-position:	-271px   -0px;top:0px;left:271px;height:325px;width:138px;}
+	.contabilidade #menua #menu-1 a:hover	 			{background-position:	-1px   -331px;}
+	.contabilidade #menua #menu-2 a:hover	 			{background-position:	-1px   -373px;}
+	.contabilidade #menua #menu-3 a:hover 				{background-position:	-1px   -415px;}
+	.contabilidade #menua #menu-4 a:hover	 			{background-position:	-1px   -457px;}
+	.contabilidade #menua #menu-5 a:hover	 			{background-position:	-1px   -499px;}
+	.contabilidade #menua #menu-6 a:hover	 			{background-position:	-1px   -539px;}
+	.contabilidade #menua #menu-7 a:hover	 			{background-position:	-1px   -579px;}
+	.contabilidade #menua #menu-8 a:hover	 			{background-position:	-1px   -619px;}
+	.contabilidade #menua #menu-9 a:hover	 			{background-position:	-271px   -331px;}
+
+
+	.contabilidade #menuf {background-image:url(assets/fcontabilidade.png);width:420px;height:53px;margin:0 auto;position:relative;display:block;float:left;}
+	.contabilidade #menuf li a{background-image:url(assets/fcontabilidade.png);display:block;position:absolute;}
+	.contabilidade #menuf li a:hover{background-image:url(assets/fcontabilidade.png);position:absolute;}
+	.contabilidade #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.contabilidade #menuf #menu-1 a				{background-position:	-1px   -0px;top:0px;left:1px;height:53px;width:137px;}
+	.contabilidade #menuf #menu-2 a 			{background-position:	-138px   -0px;top:0px;left:138px;height:53px;width:140px;}
+	.contabilidade #menuf #menu-3 a	   			{background-position:	-281px   -0px;top:0px;left:281px;height:53px;width:137px;}
+	.contabilidade #menuf #menu-1 a:hover				{background-position:	-1px   -55px;}
+	.contabilidade #menuf #menu-2 a:hover 				{background-position:	-138px   -55px;}
+	.contabilidade #menuf #menu-3 a:hover	   			{background-position:	-281px   -55px;}
+	.contabilidade #menuf #menu-1 a:hover, .contabilidade #menuf #menu-1 a:focus,
+	.contabilidade .item1 #menuf #menu-1 a	 			{background-position:	-1px   -55px;}
+	.contabilidade #menuf #menu-2 a:hover, .contabilidade #menuf #menu-2 a:focus,
+	.contabilidade .item2 #menuf #menu-2 a	 			{background-position:	-138px   -55px;}
+	.contabilidade #menuf #menu-3 a:hover, .contabilidade #menuf #menu-3 a:focus,
+	.contabilidade .item3 #menuf #menu-3 a	 			{background-position:	-281px   -55px;}
+	
+	.custos #content{width:100%;}	
+	.custos #menua {width:540px;height:160px;margin:0 auto;position:relative;display:block;float:left;}
+	.custos #menua li a{background-image:url(assets/acustos.png);display:block;position:absolute;}
+	.custos #menua li a:hover{background-image:url(assets/acustos.png);position:absolute;}
+	.custos #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.custos #menua #menu-1 a				{background-position:	-1px   0px;top:30px;left:1px;height:54px;width:138px;}
+	.custos #menua #menu-2 a 				{background-position:	-139px   -0px;top:30px;left:139px;height:54px;width:138px;}
+	.custos #menua #menu-3 a	   			{background-position:	-278px   -0px;top:30px;left:278px;height:54px;width:138px;}
+	.custos #menua #menu-4 a	   			{background-position:	-417px   -0px;top:30px;left:417px;height:54px;width:138px;}
+	.custos #menua #menu-1 a:hover				{background-position:	-2px   -63px;}
+	.custos #menua #menu-2 a:hover 				{background-position:	-140px   -63px;}
+	.custos #menua #menu-3 a:hover	   			{background-position:	-279px   -63px;}
+	.custos #menua #menu-4 a:hover	   			{background-position:	-418px   -63px;}
+	
+	.custos #menuf {width:510px;height:160px;margin:0 auto;position:relative;display:block;float:left;}
+	.custos #menuf li a{background-image:url(assets/acustos.png);display:block;position:absolute;}
+	.custos #menuf li a:hover{background-image:url(assets/acustos.png);position:absolute;}
+	.custos #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.custos #menuf #menu-1 a				{background-position:	-1px   -162px;top:30px;left:1px;height:54px;width:138px;}
+	.custos #menuf #menu-2 a 				{background-position:	-139px   -132px;top:0px;left:139px;height:54px;width:138px;}
+	.custos #menuf #menu-5 a 				{background-position:	-139px   -186px;top:56px;left:139px;height:54px;width:138px;}
+	.custos #menuf #menu-3 a	   			{background-position:	-278px   -0px;top:30px;left:278px;height:54px;width:138px;}
+	.custos #menuf #menu-4 a	   			{background-position:	-417px   -0px;top:30px;left:417px;height:54px;width:138px;}
+	.custos #menuf #menu-1 a:hover				{background-position:	-2px   -277px;}
+	.custos #menuf #menu-2 a:hover 				{background-position:	-140px   -247px;}
+	.custos #menuf #menu-5 a:hover 				{background-position:	-140px   -301px;}
+	.custos #menuf #menu-3 a:hover	   			{background-position:	-279px   -63px;}
+	.custos #menuf #menu-4 a:hover	   			{background-position:	-418px   -63px;}
+	
+	
+	.fiscal #menua{background-image:url(assets/afiscal.png);width:305px;height:230px;margin:0 auto;position:relative;}
+	.fiscal #menua li a{background-image:url(assets/afiscal.png);display:block;position:absolute;}
+	.fiscal #menua li a:hover{background-image:url(assets/afiscal.png);position:absolute;}
+	.fiscal #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.fiscal #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:55px;width:185px;}
+	.fiscal #menua #menu-2 a	 			{background-position:	-1px   -55px;top:55px;left:1px;height:55px;width:185px;}
+	.fiscal #menua #menu-3 a	 			{background-position:	-1px   -110px;top:110px;left:1px;height:55px;width:185px;}
+	.fiscal #menua #menu-1 a:hover	 			{background-position:	-365px   -1px;}
+	.fiscal #menua #menu-2 a:hover	 			{background-position:	-365px   -56px;}
+	.fiscal #menua #menu-3 a:hover	 			{background-position:	-365px   -111px;}
+	
+	.fiscal #menuf{background-image:url(assets/ffiscal.png);width:305px;height:230px;margin:0 auto;position:relative;}
+	.fiscal #menuf li a{background-image:url(assets/ffiscal.png);display:block;position:absolute;}
+	.fiscal #menuf li a:hover{background-image:url(assets/ffiscal.png);position:absolute;}
+	.fiscal #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.fiscal #menuf #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:55px;width:187px;}
+	.fiscal #menuf #menu-2 a	 			{background-position:	-1px   -55px;top:55px;left:1px;height:55px;width:187px;}
+	.fiscal #menuf #menu-3 a	 			{background-position:	-1px   -111px;top:111px;left:1px;height:55px;width:187px;}
+	.fiscal #menuf #menu-4 a	 			{background-position:	-1px   -167px;top:167px;left:1px;height:55px;width:187px;}
+	.fiscal #menuf #menu-1 a:hover	 			{background-position:	-375px   -2px;}
+	.fiscal #menuf #menu-2 a:hover	 			{background-position:	-375px   -57px;}
+	.fiscal #menuf #menu-3 a:hover	 			{background-position:	-375px   -113px;}
+	.fiscal #menuf #menu-4 a:hover	 			{background-position:	-375px   -169px;}
+	.fiscal #menuf #menu-1 a:hover, .fiscal #menuf #menu-1 a:focus,
+	.fiscal .item1 #menuf #menu-1 a	 			{background-position:	-375px   -2px;}
+	.fiscal #menuf #menu-2 a:hover, .fiscal #menuf #menu-2 a:focus,
+	.fiscal .item2 #menuf #menu-2 a	 			{background-position:	-375px   -57px;}
+	.fiscal #menuf #menu-3 a:hover, .fiscal #menuf #menu-3 a:focus,
+	.fiscal .item3 #menuf #menu-3 a	 			{background-position:	-375px   -113px;}
+	.fiscal #menuf #menu-4 a:hover, .fiscal #menuf #menu-4 a:focus,
+	.fiscal .item4 #menuf #menu-4 a				{background-position:	-375px   -169px;}
+	
+	
+	.comercial #menua{background-image:url(assets/acomercial.png);width:265px;height:67px;margin:0 auto;position:relative;}
+	.comercial #menua li a{background-image:url(assets/acomercial.png);display:block;position:absolute;}
+	.comercial #menua li a:hover{background-image:url(assets/acomercial.png);position:absolute;}
+	.comercial #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.comercial #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:66px;width:125px;}
+	.comercial #menua #menu-1 a:hover	 			{background-position:	-1px   -68px;top:0px;left:1px;}
+	
+	
+	.comercial #menuf{background-image:url(assets/fcomercial.png);width:265px;height:67px;margin:0 auto;position:relative;}
+	.comercial #menuf li a{background-image:url(assets/fcomercial.png);display:block;position:absolute;}
+	.comercial #menuf li a:hover{background-image:url(assets/fcomercial.png);position:absolute;}
+	.comercial #menuf li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.comercial #menuf #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:66px;width:125px;}
+	.comercial #menuf #menu-1 a:hover	 			{background-position:	-1px   -67px;top:0px;left:1px;}
+	
+	
+	
+	.gestao-seminarios #menua{background-image:url(assets/gestao-seminarios.png);width:125px;height:360px;margin:0 auto;position:relative;}
+	.gestao-seminarios #menua li a{background-image:url(assets/gestao-seminarios.png);display:block;position:absolute;}
+	.gestao-seminarios #menua li a:hover{background-image:url(assets/gestao-seminarios.png);position:absolute;}
+	.gestao-seminarios #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.gestao-seminarios #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:69px;width:125px;}
+	.gestao-seminarios #menua #menu-2 a	 			{background-position:	-1px   -70px;top:70px;left:1px;height:69px;width:125px;}
+	.gestao-seminarios #menua #menu-3 a	 			{background-position:	-1px   -140px;top:140px;left:1px;height:69px;width:125px;}
+	.gestao-seminarios #menua #menu-4 a	 			{background-position:	-1px   -210px;top:210px;left:1px;height:69px;width:125px;}
+	.gestao-seminarios #menua #menu-5 a	 			{background-position:	-1px   -280px;top:280px;left:1px;height:69px;width:125px;}
+	.gestao-seminarios #menua #menu-1 a:hover	 			{background-position:	-144px   -0px;}
+	.gestao-seminarios #menua #menu-2 a:hover	 			{background-position:	-144px   -70px;}
+	.gestao-seminarios #menua #menu-3 a:hover	 			{background-position:	-144px   -140px;}
+	.gestao-seminarios #menua #menu-4 a:hover	 			{background-position:	-144px   -210px;}
+	.gestao-seminarios #menua #menu-5 a:hover	 			{background-position:	-144px   -280px;}
+	
+
+	.gestao-testesi #menua{background-image:url(assets/gestao-testesi.png);width:225px;height:210px;margin:0 auto;position:relative;}
+	.gestao-testesi #menua li a{background-image:url(assets/gestao-testesi.png);display:block;position:absolute;}
+	.gestao-testesi #menua li a:hover{background-image:url(assets/gestao-testesi.png);position:absolute;}
+	.gestao-testesi #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.gestao-testesi #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:89px;width:210px;}
+	.gestao-testesi #menua #menu-2 a	 			{background-position:	-1px   -100px;top:100px;left:1px;height:89px;width:210px;}
+	.gestao-testesi #menua #menu-1 a:hover	 			{background-position:	-238px   -0px;}
+	.gestao-testesi #menua #menu-2 a:hover	 			{background-position:	-238px   -100px;}
+
+
+	
+	.gestao-workshops #menua{background-image:url(assets/gestao-workshops.png);width:125px;height:360px;margin:0 auto;position:relative;}
+	.gestao-workshops #menua li a{background-image:url(assets/gestao-workshops.png);display:block;position:absolute;}
+	.gestao-workshops #menua li a:hover{background-image:url(assets/gestao-workshops.png);position:absolute;}
+	.gestao-workshops #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.gestao-workshops #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:69px;width:125px;}
+	.gestao-workshops #menua #menu-2 a	 			{background-position:	-1px   -70px;top:70px;left:1px;height:69px;width:125px;}
+	.gestao-workshops #menua #menu-1 a:hover	 			{background-position:	-129px   -0px;}
+	.gestao-workshops #menua #menu-2 a:hover	 			{background-position:	-129px   -70px;}
+	
+	
+	.gestao-requisitos #menua{background-image:url(assets/gestao-requisitos.png);width:350px;height:200px;margin:0 auto;position:relative;}
+	.gestao-requisitos #menua li a{background-image:url(assets/gestao-requisitos.png);display:block;position:absolute;}
+	.gestao-requisitos #menua li a:hover{background-image:url(assets/gestao-requisitos.png);position:absolute;}
+	.gestao-requisitos #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.gestao-requisitos #menu-1 a			{background-position:	-0px   -0px;top:0px;left:0px;height:46px;width:208px;}
+	.gestao-requisitos #menu-2 a 			{background-position:	-0px   -47px;top:47px;height:46px;width:208px;left:0px;}
+	.gestao-requisitos #menu-3 a	   		{background-position:	-0px   -95px;top:95px;left:0px;height:47px;width:208px;}
+	.gestao-requisitos #menu-4 a 	 		{background-position:	-0px   -147px;top:147px;left:0px;height:28px;width:340px;}    
+	.gestao-requisitos #menu-5 a	        	{background-position:	-0px   -175px;top:175px;left:0px;height:30px;width:340px;}
+	.gestao-requisitos #menu-6 a 	                {background-position:	-209px   -0px;top:0px;left:209px;height:81px;width:132px;}
+	.gestao-requisitos #menu-7 a 	  		{background-position:	-209px   -82px;top:82px;left:209px;height:60px;width:132px;}
+	.gestao-requisitos #menu-1 a:hover		{background-position:	-362px   -0px;}
+	.gestao-requisitos #menu-2 a:hover 		{background-position:	-362px   -47px;}
+	.gestao-requisitos #menu-3 a:hover	   	{background-position:	-362px   -95px;}
+	.gestao-requisitos #menu-4 a:hover 	 	{background-position:	-362px   -147px;}    
+	.gestao-requisitos #menu-5 a:hover	     	{background-position:	-362px   -175px;}
+	.gestao-requisitos #menu-6 a:hover 	        {background-position:	-571px   -0px;}
+	.gestao-requisitos #menu-7 a:hover 	  	{background-position:	-571px   -82px;}
+	
+	
+	.gestao-testes #menua{background-image:url(assets/gestao-testes.pns);width:125px;height:360px;margin:0 auto;position:relative;}
+	.gestao-testes #menua li a{background-image:url(assets/gestao-testes.png);display:block;position:absolute;}
+	.gestao-testes #menua li a:hover{background-image:url(assets/gestao-testes.png);position:absolute;}
+	.gestao-testes #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.gestao-testes #menua #menu-1 a	 			{background-position:	-1px   -0px;top:0px;left:1px;height:69px;width:125px;}
+	.gestao-testes #menua #menu-2 a	 			{background-position:	-1px   -70px;top:70px;left:1px;height:69px;width:125px;}
+	.gestao-testes #menua #menu-3 a	 			{background-position:	-1px   -140px;top:140px;left:1px;height:69px;width:125px;}
+	.gestao-testes #menua #menu-1 a:hover	 			{background-position:	-142px   -0px;}
+	.gestao-testes #menua #menu-2 a:hover	 			{background-position:	-142px   -70px;}
+	.gestao-testes #menua #menu-3 a:hover	 			{background-position:	-142px   -140px;}
+	
+	
+	.gestao-treinamentos #menua{background-image:url(assets/gestao-treinamentos.png);width:555px;height:340px;margin:0 auto;position:relative;}
+	.gestao-treinamentos #menua li a{background-image:url(assets/gestao-treinamentos.png);display:block;position:absolute;}
+	.gestao-treinamentos #menua li a:hover{background-image:url(assets/gestao-treinamentos.png);position:absolute;}
+	.gestao-treinamentos #menua li a span{background:none repeat scroll 0 0 transparent;font-size:85%;}
+	.gestao-treinamentos #menu-1 a			{background-position:	-84px   -0px;top:0px;left:84px;height:58px;width:261px;}
+	.gestao-treinamentos #menu-2 a 			{background-position:	-84px   -59px;top:59px;height:58px;width:261px;left:84px;}
+	.gestao-treinamentos #menu-3 a	   		{background-position:	-84px   -116px;top:116px;left:84px;height:62px;width:261px;}
+	.gestao-treinamentos #menu-4 a 	 		{background-position:	-84px   -183px;top:183px;left:84px;height:31px;width:420px;}    
+	.gestao-treinamentos #menu-5 a	     	{background-position:	-84px   -218px;top:218px;left:84px;height:32px;width:420px;}    
+	.gestao-treinamentos #menu-12 a	     	{background-position:	-84px   -254px;top:254px;left:84px;height:34px;width:420px;}
+	.gestao-treinamentos #menu-6 a 	        {background-position:	-348px   -0px;top:0px;left:348px;height:52px;width:171px;}
+	.gestao-treinamentos #menu-11 a	  		{background-position:	-348px   -53px;top:53px;left:348px;height:47px;width:171px;}
+	.gestao-treinamentos #menu-7 a 	  		{background-position:	-348px   -102px;top:102px;left:348px;height:77px;width:171px;}
+	.gestao-treinamentos #menu-8 a 	  		{background-position:	-0px   -0px;top:0px;left:0px;height:176px;width:78px;}
+	.gestao-treinamentos #menu-9 a 	  		{background-position:	-0px   -181px;top:181px;left:0px;height:105px;width:78px;}
+	.gestao-treinamentos #menu-10 a 	  	{background-position:	-0px   -291px;top:291px;left:0px;height:44px;width:554px;}
+	
+	.gestao-treinamentos .item2 #menu-1 a:hover,
+	.gestao-treinamentos .item3 #menu-1 a:hover,
+	.gestao-treinamentos .item4 #menu-1 a:hover,
+	.gestao-treinamentos .item5 #menu-1 a:hover,
+	.gestao-treinamentos .item6 #menu-1 a:hover,
+	.gestao-treinamentos .item7 #menu-1 a:hover,
+	.gestao-treinamentos .item8 #menu-1 a:hover	,	
+	.gestao-treinamentos .item9 #menu-1 a:hover,
+	.gestao-treinamentos .item10 #menu-1 a:hover,
+	.gestao-treinamentos .item11 #menu-1 a:hover,
+	.gestao-treinamentos .item12 #menu-1 a:hover,
+	.gestao-treinamentos .item1 #menu-1 a:hover	{background-position:	-84px   -0px;top:0px;left:84px;height:58px;width:261px;}
+	
+	.gestao-treinamentos #menu-1 a:hover,
+	.gestao-treinamentos .item2 #menu-1 a,
+	.gestao-treinamentos .item3 #menu-1 a,
+	.gestao-treinamentos .item4 #menu-1 a,
+	.gestao-treinamentos .item5 #menu-1 a,
+	.gestao-treinamentos .item6 #menu-1 a,
+	.gestao-treinamentos .item7 #menu-1 a,
+	.gestao-treinamentos .item8 #menu-1 a,
+	.gestao-treinamentos .item9 #menu-1 a,
+	.gestao-treinamentos .item10 #menu-1 a,
+	.gestao-treinamentos .item11 #menu-1 a,
+	.gestao-treinamentos .item12 #menu-1 a			{background-position:	-84px   -346px;}
+	
+	.gestao-treinamentos .item1 #menu-2 a:hover,
+	.gestao-treinamentos .item2 #menu-2 a:hover,
+	.gestao-treinamentos .item3 #menu-2 a:hover,
+	.gestao-treinamentos .item4 #menu-2 a:hover,
+	.gestao-treinamentos .item5 #menu-2 a:hover,
+	.gestao-treinamentos .item6 #menu-2 a:hover,
+	.gestao-treinamentos .item7 #menu-2 a:hover,
+	.gestao-treinamentos .item8 #menu-2 a:hover,
+	.gestao-treinamentos .item9 #menu-2 a:hover,
+	.gestao-treinamentos .item10 #menu-2 a:hover,
+	.gestao-treinamentos .item11 #menu-2 a:hover,
+	.gestao-treinamentos .item12 #menu-2 a:hover			{background-position:	-84px   -59px;top:59px;height:58px;width:261px;left:84px;}
+	
+	.gestao-treinamentos #menu-2 a:hover,
+	.gestao-treinamentos .item1 #menu-2 a,
+	.gestao-treinamentos .item3 #menu-2 a,
+	.gestao-treinamentos .item4 #menu-2 a,
+	.gestao-treinamentos .item5 #menu-2 a,
+	.gestao-treinamentos .item6 #menu-2 a,
+	.gestao-treinamentos .item7 #menu-2 a,
+	.gestao-treinamentos .item8 #menu-2 a,
+	.gestao-treinamentos .item9 #menu-2 a,
+	.gestao-treinamentos .item10 #menu-2 a,
+	.gestao-treinamentos .item11 #menu-2 a,
+	.gestao-treinamentos .item12 #menu-2 a			{background-position:	-84px   -405px;}
+	
+	.gestao-treinamentos .item1 #menu-3 a:hover,
+	.gestao-treinamentos .item2 #menu-3 a:hover,
+	.gestao-treinamentos .item3 #menu-3 a:hover,
+	.gestao-treinamentos .item4 #menu-3 a:hover,
+	.gestao-treinamentos .item5 #menu-3 a:hover,
+	.gestao-treinamentos .item6 #menu-3 a:hover,
+	.gestao-treinamentos .item7 #menu-3 a:hover,
+	.gestao-treinamentos .item8 #menu-3 a:hover,
+	.gestao-treinamentos .item9 #menu-3 a:hover,
+	.gestao-treinamentos .item10 #menu-3 a:hover,
+	.gestao-treinamentos .item11 #menu-3 a:hover,
+	.gestao-treinamentos .item12 #menu-3 a:hover	   		{background-position:	-84px   -116px;top:116px;left:84px;height:62px;width:261px;}
+	
+	.gestao-treinamentos #menu-3 a:hover,
+	.gestao-treinamentos .item1 #menu-3 a,
+	.gestao-treinamentos .item2 #menu-3 a,
+	.gestao-treinamentos .item4 #menu-3 a,
+	.gestao-treinamentos .item5 #menu-3 a,
+	.gestao-treinamentos .item6 #menu-3 a,
+	.gestao-treinamentos .item7 #menu-3 a,
+	.gestao-treinamentos .item8 #menu-3 a,
+	.gestao-treinamentos .item9 #menu-3 a,
+	.gestao-treinamentos .item10 #menu-3 a,
+	.gestao-treinamentos .item11 #menu-3 a,
+	.gestao-treinamentos .item12 #menu-3 a	   		{background-position:	-84px   -463px;}
+	
+	.gestao-treinamentos .item1 #menu-4 a:hover,
+	.gestao-treinamentos .item2 #menu-4 a:hover,
+	.gestao-treinamentos .item3 #menu-4 a:hover,
+	.gestao-treinamentos .item4 #menu-4 a:hover,
+	.gestao-treinamentos .item5 #menu-4 a:hover,
+	.gestao-treinamentos .item6 #menu-4 a:hover,
+	.gestao-treinamentos .item7 #menu-4 a:hover,
+	.gestao-treinamentos .item8 #menu-4 a:hover, 	 	
+	.gestao-treinamentos .item9 #menu-4 a:hover,
+	.gestao-treinamentos .item10 #menu-4 a:hover,
+	.gestao-treinamentos .item11 #menu-4 a:hover,
+	.gestao-treinamentos .item12 #menu-4 a:hover	{background-position:	-84px   -183px;top:183px;left:84px;height:31px;width:420px;}    
+	
+	.gestao-treinamentos #menu-4 a:hover,
+	.gestao-treinamentos .item1 #menu-4 a,
+	.gestao-treinamentos .item2 #menu-4 a,
+	.gestao-treinamentos .item3 #menu-4 a,
+	.gestao-treinamentos .item5 #menu-4 a,
+	.gestao-treinamentos .item6 #menu-4 a,
+	.gestao-treinamentos .item7 #menu-4 a,
+	.gestao-treinamentos .item8 #menu-4 a,
+	.gestao-treinamentos .item9 #menu-4 a,
+	.gestao-treinamentos .item10 #menu-4 a,
+	.gestao-treinamentos .item11 #menu-4 a,
+	.gestao-treinamentos .item12 #menu-4 a 			{background-position:	-84px   -529px;} 
+	 
+	.gestao-treinamentos .item1 #menu-5 a:hover,
+	.gestao-treinamentos .item2 #menu-5 a:hover,
+	.gestao-treinamentos .item3 #menu-5 a:hover,
+	.gestao-treinamentos .item4 #menu-5 a:hover,
+	.gestao-treinamentos .item5 #menu-5 a:hover,
+	.gestao-treinamentos .item6 #menu-5 a:hover,
+	.gestao-treinamentos .item7 #menu-5 a:hover,
+	.gestao-treinamentos .item8 #menu-5 a:hover,
+	.gestao-treinamentos .item9 #menu-5 a:hover,
+	.gestao-treinamentos .item10 #menu-5 a:hover,
+	.gestao-treinamentos .item11 #menu-5 a:hover,
+	.gestao-treinamentos .item12 #menu-5 a:hover    	{background-position:	-84px   -218px;top:218px;left:84px;height:32px;width:420px;}    
+	
+	.gestao-treinamentos #menu-5 a:hover,
+	.gestao-treinamentos .item1 #menu-5 a,
+	.gestao-treinamentos .item2 #menu-5 a,
+	.gestao-treinamentos .item3 #menu-5 a,
+	.gestao-treinamentos .item4 #menu-5 a,
+	.gestao-treinamentos .item6 #menu-5 a,
+	.gestao-treinamentos .item7 #menu-5 a,
+	.gestao-treinamentos .item8 #menu-5 a,
+	.gestao-treinamentos .item9 #menu-5 a,
+	.gestao-treinamentos .item10 #menu-5 a,
+	.gestao-treinamentos .item11 #menu-5 a,
+	.gestao-treinamentos .item12 #menu-5 a	     	{background-position:	-84px   -564px;}
+	
+	.gestao-treinamentos .item1 #menu-12 a:hover,
+	.gestao-treinamentos .item2 #menu-12 a:hover,
+	.gestao-treinamentos .item3 #menu-12 a:hover,
+	.gestao-treinamentos .item4 #menu-12 a:hover,
+	.gestao-treinamentos .item5 #menu-12 a:hover,
+	.gestao-treinamentos .item6 #menu-12 a:hover,
+	.gestao-treinamentos .item7 #menu-12 a:hover,
+	.gestao-treinamentos .item8 #menu-12 a:hover,
+	.gestao-treinamentos .item9 #menu-12 a:hover,
+	.gestao-treinamentos .item10 #menu-12 a:hover,
+	.gestao-treinamentos .item11 #menu-12 a:hover,
+	.gestao-treinamentos .item12 #menu-12 a:hover	     	{background-position:	-84px   -254px;top:254px;left:84px;height:34px;width:420px;}
+		
+    .gestao-treinamentos .item1 #menu-12 a,
+	.gestao-treinamentos .item2 #menu-12 a,
+	.gestao-treinamentos .item3 #menu-12 a,
+	.gestao-treinamentos .item4 #menu-12 a,
+	.gestao-treinamentos .item5 #menu-12 a,
+	.gestao-treinamentos .item6 #menu-12 a,
+	.gestao-treinamentos .item7 #menu-12 a,
+	.gestao-treinamentos .item8 #menu-12 a,
+	.gestao-treinamentos .item9 #menu-12 a,
+	.gestao-treinamentos .item10 #menu-12 a,
+	.gestao-treinamentos .item11 #menu-12 a	  		{background-position:	-84px   -600px;}
+	
+	.gestao-treinamentos .item1 #menu-6 a:hover,
+	.gestao-treinamentos .item2 #menu-6 a:hover,
+	.gestao-treinamentos .item3 #menu-6 a:hover,
+	.gestao-treinamentos .item4 #menu-6 a:hover,
+	.gestao-treinamentos .item5 #menu-6 a:hover,
+	.gestao-treinamentos .item6 #menu-6 a:hover,
+	.gestao-treinamentos .item7 #menu-6 a:hover,
+	.gestao-treinamentos .item8 #menu-6 a:hover,
+	.gestao-treinamentos .item9 #menu-6 a:hover,
+	.gestao-treinamentos .item10 #menu-6 a:hover,
+	.gestao-treinamentos .item11 #menu-6 a:hover,
+	.gestao-treinamentos .item12 #menu-6 a:hover	        {background-position:	-348px   -0px;top:0px;left:348px;height:52px;width:171px;}
+	
+	.gestao-treinamentos .item1 #menu-6 a,
+	.gestao-treinamentos .item2 #menu-6 a,
+	.gestao-treinamentos .item3 #menu-6 a,
+	.gestao-treinamentos .item4 #menu-6 a,
+	.gestao-treinamentos .item5 #menu-6 a,
+	.gestao-treinamentos .item7 #menu-6 a,
+	.gestao-treinamentos .item8 #menu-6 a,
+	.gestao-treinamentos .item9 #menu-6 a,
+	.gestao-treinamentos .item10 #menu-6 a,
+	.gestao-treinamentos .item11 #menu-6 a,
+	.gestao-treinamentos .item12 #menu-6 a	        {background-position:	-348px   -346px;}
+	
+	.gestao-treinamentos .item1 #menu-11 a:hover,
+	.gestao-treinamentos .item2 #menu-11 a:hover,
+	.gestao-treinamentos .item3 #menu-11 a:hover,
+	.gestao-treinamentos .item4 #menu-11 a:hover,
+	.gestao-treinamentos .item5 #menu-11 a:hover,
+	.gestao-treinamentos .item6 #menu-11 a:hover,
+	.gestao-treinamentos .item7 #menu-11 a:hover,
+	.gestao-treinamentos .item8 #menu-11 a:hover,
+	.gestao-treinamentos .item9 #menu-11 a:hover,
+	.gestao-treinamentos .item10 #menu-11 a:hover,
+	.gestao-treinamentos .item11 #menu-11 a:hover,
+	.gestao-treinamentos .item112 #menu-11 a:hover	  		{background-position:	-348px   -53px;top:53px;left:348px;height:47px;width:171px;}
+	
+    .gestao-treinamentos .item1 #menu-11 a,
+	.gestao-treinamentos .item2 #menu-11 a,
+	.gestao-treinamentos .item3 #menu-11 a,
+	.gestao-treinamentos .item4 #menu-11 a,
+	.gestao-treinamentos .item5 #menu-11 a,
+	.gestao-treinamentos .item6 #menu-11 a,
+	.gestao-treinamentos .item7 #menu-11 a,
+	.gestao-treinamentos .item8 #menu-11 a,
+	.gestao-treinamentos .item9 #menu-11 a,
+	.gestao-treinamentos .item10 #menu-11 a,
+	.gestao-treinamentos .item12 #menu-11 a 	  		{background-position:	-348px   -399px;}
+	
+	.gestao-treinamentos .item1 #menu-7 a:hover,
+	.gestao-treinamentos .item2 #menu-7 a:hover,
+	.gestao-treinamentos .item3 #menu-7 a:hover,
+	.gestao-treinamentos .item4 #menu-7 a:hover,
+	.gestao-treinamentos .item5 #menu-7 a:hover,
+	.gestao-treinamentos .item6 #menu-7 a:hover,
+	.gestao-treinamentos .item7 #menu-7 a:hover,
+	.gestao-treinamentos .item8 #menu-7 a:hover,
+	.gestao-treinamentos .item9 #menu-7 a:hover,
+	.gestao-treinamentos .item10 #menu-7 a:hover,
+	.gestao-treinamentos .item11 #menu-7 a:hover,
+	.gestao-treinamentos .item12 #menu-7 a:hover 	  		{background-position:	-348px   -102px;top:102px;left:348px;height:77px;width:171px;}
+	
+	
+	.gestao-treinamentos .item1 #menu-7 a,
+	.gestao-treinamentos .item2 #menu-7 a,
+	.gestao-treinamentos .item3 #menu-7 a,
+	.gestao-treinamentos .item4 #menu-7 a,
+	.gestao-treinamentos .item5 #menu-7 a,
+	.gestao-treinamentos .item6 #menu-7 a,
+	.gestao-treinamentos .item8 #menu-7 a,
+	.gestao-treinamentos .item9 #menu-7 a,
+	.gestao-treinamentos .item10 #menu-7 a,
+	.gestao-treinamentos .item11 #menu-7 a,
+	.gestao-treinamentos .item12 #menu-7 a 	  		{background-position:	-348px   -448px;}
+	
+	.gestao-treinamentos .item1 #menu-8 a:hover,
+	.gestao-treinamentos .item2 #menu-8 a:hover,
+	.gestao-treinamentos .item3 #menu-8 a:hover,
+	.gestao-treinamentos .item4 #menu-8 a:hover,
+	.gestao-treinamentos .item5 #menu-8 a:hover,
+	.gestao-treinamentos .item6 #menu-8 a:hover,
+	.gestao-treinamentos .item7 #menu-8 a:hover,
+	.gestao-treinamentos .item8 #menu-8 a:hover,
+	.gestao-treinamentos .item9 #menu-8 a:hover,
+	.gestao-treinamentos .item10 #menu-8 a:hover,
+	.gestao-treinamentos .item11 #menu-8 a:hover,
+	.gestao-treinamentos .item12 #menu-8 a:hover	  		{background-position:	-0px   -0px;top:0px;left:0px;height:176px;width:78px;}
+	
+    .gestao-treinamentos .item1 #menu-8 a,
+ 	.gestao-treinamentos .item2 #menu-8 a,
+	.gestao-treinamentos .item3 #menu-8 a,
+	.gestao-treinamentos .item4 #menu-8 a,
+	.gestao-treinamentos .item5 #menu-8 a,
+	.gestao-treinamentos .item6 #menu-8 a,
+	.gestao-treinamentos .item7 #menu-8 a,
+	.gestao-treinamentos .item9 #menu-8 a,
+	.gestao-treinamentos .item10 #menu-8 a,
+	.gestao-treinamentos .item11 #menu-8 a,
+	.gestao-treinamentos .item12 #menu-8 a			{background-position:	-0px   -346px;}
+	
+	.gestao-treinamentos .item1 #menu-9 a:hover,
+	.gestao-treinamentos .item2 #menu-9 a:hover,
+	.gestao-treinamentos .item3 #menu-9 a:hover,
+	.gestao-treinamentos .item4 #menu-9 a:hover,
+	.gestao-treinamentos .item5 #menu-9 a:hover, 	  	
+	.gestao-treinamentos .item6 #menu-9 a:hover,
+	.gestao-treinamentos .item7 #menu-9 a:hover,
+	.gestao-treinamentos .item8 #menu-9 a:hover,
+	.gestao-treinamentos .item9 #menu-9 a:hover,
+	.gestao-treinamentos .item10 #menu-9 a:hover,
+	.gestao-treinamentos .item11 #menu-9 a:hover,
+	.gestao-treinamentos .item12 #menu-9 a:hover 	{background-position:	-0px   -181px;top:181px;left:0px;height:105px;width:78px;}
+	
+	
+	
+    .gestao-treinamentos .item1 #menu-9 a,
+  	.gestao-treinamentos .item2 #menu-9 a,
+	.gestao-treinamentos .item3 #menu-9 a,
+	.gestao-treinamentos .item4 #menu-9 a,
+	.gestao-treinamentos .item5 #menu-9 a,
+	.gestao-treinamentos .item6 #menu-9 a,
+	.gestao-treinamentos .item7 #menu-9 a,
+	.gestao-treinamentos .item8 #menu-9 a,
+	.gestao-treinamentos .item10 #menu-9 a,
+	.gestao-treinamentos .item11 #menu-9 a,
+	.gestao-treinamentos .item12 #menu-9 a			{background-position:	-0px   -527px;}
+
+	.gestao-treinamentos .item1 #menu-10 a:hover,
+	.gestao-treinamentos .item2 #menu-10 a:hover,
+	.gestao-treinamentos .item3 #menu-10 a:hover,
+	.gestao-treinamentos .item4 #menu-10 a:hover,
+	.gestao-treinamentos .item5 #menu-10 a:hover,
+	.gestao-treinamentos .item6 #menu-10 a:hover,
+	.gestao-treinamentos .item7 #menu-10 a:hover,
+	.gestao-treinamentos .item8 #menu-10 a:hover,
+	.gestao-treinamentos .item9 #menu-10 a:hover,
+	.gestao-treinamentos .item10 #menu-10 a:hover,
+	.gestao-treinamentos .item11 #menu-10 a:hover,
+	.gestao-treinamentos .item12 #menu-10 a:hover	  	{background-position:	-0px   -291px;top:291px;left:0px;height:44px;width:554px;}
+	
+    .gestao-treinamentos .item1 #menu-10 a,
+ 	.gestao-treinamentos .item2 #menu-10 a,
+	.gestao-treinamentos .item3 #menu-10 a,
+	.gestao-treinamentos .item4 #menu-10 a,
+	.gestao-treinamentos .item5 #menu-10 a,
+	.gestao-treinamentos .item6 #menu-10 a,
+	.gestao-treinamentos .item7 #menu-10 a,
+	.gestao-treinamentos .item8 #menu-10 a,
+	.gestao-treinamentos .item9 #menu-10 a,
+	.gestao-treinamentos .item11 #menu-10 a,
+	.gestao-treinamentos .item12 #menu-10 a			{background-position:	-0px   -637px;}
+	
+
+
+
+
+	.gestao-treinamentos #menu-2 a:hover		{background-position:	-84px   -405px;}
+	.gestao-treinamentos #menu-3 a:hover 		{background-position:	-84px   -463px;}
+	.gestao-treinamentos #menu-4 a:hover		{background-position:	-84px   -529px;}    
+	.gestao-treinamentos #menu-5 a:hover 		{background-position:	-84px   -564px;}
+    .gestao-treinamentos #menu-12 a:hover 	  	{background-position:	-84px   -600px;}
+	.gestao-treinamentos #menu-6 a:hover        {background-position:	-348px   -346px;}
+    .gestao-treinamentos #menu-11 a:hover  		{background-position:	-348px   -399px;}
+	.gestao-treinamentos #menu-7 a:hover 	  		{background-position:	-348px   -448px;}
+    .gestao-treinamentos #menu-8 a:hover	  		{background-position:	-0px   -346px;}
+    .gestao-treinamentos #menu-9 a:hover 	  		{background-position:	-0px   -527px;}
+    .gestao-treinamentos #menu-10 a:hover	 		{background-position:	-0px   -637px;}
+	
+	
+	
+ #texto{width:500px; margin:10px auto; text-align:center;}
+#texto a, table td li#linkfuturo a {color: #000;font-family: helvetica, arial, sans-serif;
+		letter-spacing:0px;
+		font-size:10pt;
+		margin: 0px 10px 0px 20px; text-decoration:none;}
+		#texto a:hover, table td li#linkfuturo a:hover {color: #000;font-family: helvetica, arial, sans-serif;
+				letter-spacing:0px;
+				font-size:10pt;
+				margin: 0px 10px 0px 20px; text-decoration:underline;}	
+	
+	#menutransp li{visibility:hidden;}
+		
+	.manutencao,.treinamento,.orcamento,.financeiro,.custos,.fiscal,.comercial,.patrimonio,.suprimentos,.contabilidade {background:url(assets/barra.png) top center repeat-y;}
+		#link {margin:0;color: #e3ecf3;font-family: helvetica, arial, sans-serif;
+		letter-spacing:-1px;
+		font-size:1.1em;text-decoration:none;}	

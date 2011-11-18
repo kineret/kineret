@@ -1,0 +1,102 @@
+<html>
+	<head>
+	
+	<title>Paul James Campbell - Default Value</title>
+	
+		<!-- Include required jQuery object and plug-in -->
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.defaultvalue.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Make call within DOM load handler (or place at the bottom of HTML) -->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		jQuery(function($) {
+			$("#ex-input, #ex-textarea").defaultvalue("Input value", "Textarea value");
+		});
+		/* ]]> */
+		</script>
+	
+		<style type="text/css">
+		/* <![CDATA[ */
+		* {
+			border:0;
+			padding:0;
+			margin:0;
+		}
+		body {
+			font-family: Verdana, Arial, Sans-Serif;
+			font-size:11px;
+			background:#AE1723;
+			text-align:center;
+			color:#fff;
+		}
+		h1, p {
+			margin-bottom:10px;
+		}
+		textarea, input {
+			padding:3px;
+			font-family: Verdana, Arial, Sans-Serif;
+			font-size:11px;
+			float:left;
+			margin-top:10px;
+			width:200px;
+		}
+		label {
+			float:left;
+			width:200px;
+			margin-top:10px;
+		}
+		br {
+			clear:both;
+		}
+		pre {
+			background:#900E18;
+			border-left:15px solid #710E16;
+			display:block;
+			padding:10px 15px 0 15px;
+		}
+		#container {
+			width:600px;
+			margin: 50px auto 0 auto;
+			text-align:left;
+		}
+		/* ]]> */
+		</style>
+	
+	</head>
+
+	<body>
+
+		<div id="container">
+			
+			<h1>JQuery Default Value Plugin</h1>
+			<p>Use this plugin to give a default value for input and textarea elements within your webpage.</p>
+			<p>The plugin accepts items as individual calls to the plugin or, as in my example below, listed multiply within one JQuery call with multiple text values passed in the plugin parameter.</p>
+			
+			<pre>
+jQuery(function($) {
+	$("#ex-input, #ex-textarea").defaultvalue("Input value", "Textarea value");
+});
+			</pre>
+			
+			<form method="get" action="">
+				
+				<fieldset>
+					
+					<label for="ex-input">Input example</label>
+					<input type="text" name="i" value="" id="ex-input" />
+					<br />
+					
+					<label for="example">Textarea example</label>
+					<textarea name="t" id="ex-textarea"></textarea>
+					
+					
+				</fieldset>
+					
+			</form>
+			
+		</div>
+
+	</body>
+
+</html>

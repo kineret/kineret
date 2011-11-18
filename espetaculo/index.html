@@ -1,0 +1,165 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Instituto Kineret de Dança Israeli</title>
+<link rel="stylesheet" type="text/css" href="../page.css" />
+<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.defaultvalue.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		jQuery(function($) {
+			$("#nome, #email, #texto").defaultvalue("Seu nome", "Seu e-mail", "Escreva sua mensagem! Tenha a certeza de que cada palavra será lida com toda a atenção e carinho.");
+		});
+		/* ]]> */
+		</script>
+</head>
+
+<body class="espetaculo">
+<div id="header-top">
+	<ul id="menu">
+		<li id="menu-home"><a href="/" title="Página Inicial"><span class="bgimage">Home</span></a></li>
+		<li id="menu-grupos"><a href="../grupos/" title="Idades, Horário, Local, Professores..."><span class="bgimage">Grupos</span></a></li>
+		<li id="menu-fotos"><a href="../fotos/" title="Viagens, Apresentações, Eventos..."><span class="bgimage">Fotos</span></a></li> 
+		<li id="menu-depo"><a href="../depoimentos/" title="O que andam dizendo..."><span class="bgimage">Depoimentos</span></a></li>
+		<li id="menu-eventos"><a href="../eventos/" title="Veja onde estaremos..."><span class="bgimage">Loja Virtual</span></a></li> 
+		<li id="menu-blog"><a href="../blog/" title="Muitas histórias boas..."><span class="bgimage">Blog</span></a></li>
+		<li id="menu-contato"><a href="../contato/" title="Somos todo ouvidos..."><span class="bgimage">Contato</span></a></li>
+		<li id="menu-logo"><a href="/" title="Conheça o Instituto Kineret"><span class="bgimage">Home</span></a></li>
+	</ul>
+</div>
+
+<div id="patrocinio_content">
+		<table>
+			<tr>
+				<td class="patro">
+					<img id="chcj" src="../assets/logos/chcj.png"></img>
+					<img id="mourady" src="../assets/logos/patro1.png"></img>
+					<img id="chl" src="../assets/logos/patro2.png"></img>
+					<img id="tenax" src="../assets/logos/tenax.png"></img>
+				</td>
+				<td class="patro2">
+					<img id="enjoy" src="../assets/logos/enjoy.png"></img>
+					<img id="novatec" src="../assets/logos/novatec.png"></img>
+				</td>
+				<td class="apoio">
+					<img id="cotrauma" src="../assets/logos/cotrauma.png"></img>
+					<img id="brokers" src="../assets/logos/brokers.png"></img>
+					<img id="sender" src="../assets/logos/sender.png"></img>
+					<img id="mahogany" src="../assets/logos/mahogany.png"></img>
+					<img id="apoio1" src="../assets/logos/apoio1.png"></img>
+					<img id="apoio2" src="../assets/logos/apoio2.png"></img>
+					<img id="apoio3" src="../assets/logos/apoio3.png"></img>
+					<img id="apoio4" src="../assets/logos/apoio4.png"></img>
+				</td>
+			</tr>
+		</table>
+</div>
+<div id="content">
+	<h2>Gostou do Espetáculo?</h2>
+	<h2 class="h2dourado">Tenha um pedaço dele perto de você.</h2>
+	
+	<div id="top-left-content">
+			<form id="compra" method="post" action="envio.php"  name="form">	
+				<fieldset>
+					<table>
+					<tr>
+					<td colspan="6"><h2>Camisetas Comemorativas</h2></td></tr>
+					<tr>
+					<td colspan="3"><img src="female.jpg"></img>
+					<h6>Infantil - R$ 25,00</h6>
+					<h6>Eu quero 
+					<select name="qtdcamisaf">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="2">3</option>
+					</select>
+					<select name="tamanhof">
+						<option value="selecione" selected="selected">do tamanho...</option>
+						<option value="pinfantil">P Infantil</option>
+						<option value="minfantil">M Infantil</option>
+						<option value="ginfantil">G Infantil</option>
+					</select>
+					</h6>
+					</td>
+					<td colspan="3"><img src="male.jpg"></img>
+					<h6>Adulto - R$ 25,00</h6>
+					<h6>Eu quero 
+					<select name="qtdcamisam">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="2">3</option>
+					</select>
+					<select name="tamanhom">
+						<option value="selecione" selected="selected">do tamanho...</option>
+						<option value="padulto">P Adulto</option>
+						<option value="madulto">M Adulto</option>
+						<option value="gadulto">G Adulto</option>
+						<option value="ggadulto">GG Adulto</option>
+					</select>
+					</h6>
+					</td>
+					</tr><tr><td>
+					<h6>*Tamanhos idênticos aos da camiseta roxa do Kineret</h6>
+					</td>
+					
+					</tr>
+					<tr>
+					<td colspan="6"><h2 id="titulodvd">DVD Israel de Norte a Sul</h2></td></tr>
+					<tr>
+					<td colspan="2"><img id="dvd" src="dvd.jpg"></img><h6>Filmagem - R$ 20,00</h6>
+					<select name="dvd">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</td>
+					<td colspan="2"><img id="combo" src="combo.jpg"></img><h6>Filmagem + Fotos - R$ 30,00</h6>
+					<select name="combo">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</td>
+					<td colspan="2"><img id="dvd" src="dvd.jpg"></img><h6>Fotos - R$ 15,00</h6>
+					<select name="fotos">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</td></tr>
+					<tr>
+					<td colspan="6"><input type="text" name="nome" value="" id="nome" /></td>
+					</tr>
+					<tr>
+					<td colspan="6"><input type="text" name="email" value="" id="email" /></td>
+					</tr>
+					<tr>
+					<td colspan="6"><button class="bgimage" type="submit">Send</button></td>
+					</tr>
+					</table>
+				</fieldset>
+					
+			</form>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8926866-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

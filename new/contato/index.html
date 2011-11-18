@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Instituto Kineret de Dança Israeli</title>
+<link rel="stylesheet" type="text/css" href="../page.css" />
+<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.defaultvalue.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		jQuery(function($) {
+			$("#nome, #email, #texto").defaultvalue("Seu nome", "Seu e-mail", "Escreva sua mensagem! Tenha a certeza de que cada palavra será lida com toda a atenção e carinho.");
+		});
+		/* ]]> */
+		</script>
+</head>
+
+<body class="contato">
+<div id="header-top">
+	<ul id="menu">
+		<li id="menu-home"><a href="/" title="Página Inicial"><span class="bgimage">Home</span></a></li>
+		<li id="menu-grupos"><a href="../grupos/" title="Idades, Horário, Local, Professores..."><span class="bgimage">Grupos</span></a></li>
+		<li id="menu-fotos"><a href="../fotos/" title="Viagens, Apresentações, Eventos..."><span class="bgimage">Fotos</span></a></li> 
+		<li id="menu-depo"><a href="../depoimentos/" title="O que andam dizendo..."><span class="bgimage">Depoimentos</span></a></li>
+		<li id="menu-eventos"><a href="../eventos/" title="Veja onde estaremos..."><span class="bgimage">Loja Virtual</span></a></li> 
+		<li id="menu-blog"><a href="../blog/" title="Muitas histórias boas..."><span class="bgimage">Blog</span></a></li>
+		<li id="menu-contato"><a href="../contato/" title="Somos todo ouvidos..."><span class="bgimage">Contato</span></a></li>
+		<li id="menu-logo"><a href="/" title="Conheça o Instituto Kineret"><span class="bgimage">Home</span></a></li>
+	</ul>
+</div>
+
+<div id="patrocinio_content">
+		<table>
+			<tr>
+				<td class="patro">
+					<img id="chcj" src="../assets/logos/chcj.png"></img>
+					<img id="werner" src="../assets/logos/Logo_Werner.png"></img>
+				</td>
+				<!--
+				<td class="patro">
+					<img id="chcj" src="../assets/logos/chcj.png"></img>
+					<img id="mourady" src="../assets/logos/patro1.png"></img>
+					<img id="chl" src="../assets/logos/patro2.png"></img>
+					<img id="tenax" src="../assets/logos/tenax.png"></img>
+				</td>
+				<td class="patro2">
+					<img id="enjoy" src="../assets/logos/enjoy.png"></img>
+					<img id="novatec" src="../assets/logos/novatec.png"></img>
+				</td>
+				<td class="apoio">
+					<img id="cotrauma" src="../assets/logos/cotrauma.png"></img>
+					<img id="brokers" src="../assets/logos/brokers.png"></img>
+					<img id="sender" src="../assets/logos/sender.png"></img>
+					<img id="mahogany" src="../assets/logos/mahogany.png"></img>
+					<img id="apoio1" src="../assets/logos/apoio1.png"></img>
+					<img id="apoio2" src="../assets/logos/apoio2.png"></img>
+					<img id="apoio3" src="../assets/logos/apoio3.png"></img>
+					<img id="apoio4" src="../assets/logos/apoio4.png"></img>
+				</td> -->
+			</tr>
+		</table>
+</div>
+<div id="content">
+	<h2>Quer patrocinar? Dar uma sugestão? Nos chamar para eventos? Elogiar?</h2>
+	<h2 class="h2dourado">Fique a vontade para deixar seu recado.</h2>
+	
+	<div id="top-left-content">
+			<form id="contato" method="post" action="envio.php"  name="form">	
+				<fieldset>
+					<textarea name="texto" id="texto"></textarea>
+					<input type="text" name="nome" value="" id="nome" />
+					<input type="text" name="email" value="" id="email" />
+					<button class="bgimage" type="submit">Send</button>
+					
+				</fieldset>
+					
+			</form>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8926866-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
